@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' type='text/css' href='styles/main.css'>
+	<script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>This is Bio!</title>
+</head>
+<body class='animated fadeIn delay-.2s'>
+		<div class='conNavContainer'>
+			<div id='conNavSidePanel' class='conSidePanel'>
+				<a href='javascript:void(0)' class='conClosebtn' onclick='conCloseNav()'>&times;</a>
+				<a href='#'>Bio</a>
+				<a href='#'>Events</a>
+				<a href='#'>Work</a>
+				<a href='#'>Merch</a>
+				<a href='#'>Contact</a>
+			</div> <!-- end of side panel -->
+
+			<button id='conMenuBtn' class='conOpenbtn'  onclick='conOpenNav()'><span id='conMenuOffSet'>&#9776;</span></button> <!-- end of openBtn side panel -->
+
+			<div id='social-bar' class='con-icon-bar'>
+			  <a href="#" class="insta"><i class="fa fa-instagram"></i></a> 
+			  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+			  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+			  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+			  <a href="#" class="soundcloud"><i class="fa fa-soundcloud"></i></a>
+			  <a href="#" class="spotify"><i class="fa fa-spotify"></i></a> 
+			</div>
+		</div> <!-- end of container -->
+		
+		<section id='statCon' class='conOverlay'>
+			<a href="javascript:void(0)" class="closeCon" onclick="closeCon()"></a>
+				<h1>Contact</h1>
+				<form method='post' action='conSubmit.php' class='overlayContent' target ='blank'>
+					<input id ='name' class='overlayName' type= 'text' placeholder='First & Last name here' required><br>
+					<input id ='email' class='overlayEmail' type= 'text' placeholder='Email' required><br>
+					<textarea rows='10' cols='50' id ='message' class='overlayMessage' placeholder='message aqui' required></textarea><br>
+					<input type='submit' class='conSubmit'>
+				</form>		
+		</section><!-- end of contact overlay -->
+		
+		<div onclick='openContact()' class='openContact'></div>
+
+	
+
+	<footer class='animated fadeIn delay-1s'>
+      <div class ='container clearfix'>
+        <p id ='copyRight'> James Pressley Photography &copy; 2018</p>
+
+        <div id ='socialFooter'>
+          <ul>
+            <li><a href ='https://instagram.com/shyoffcamera' target ='blank'><img class ='social instagram' src ='Img/sC.png' alt ='Give me a follow on instagram!'></a></li>
+            <li><a href ='https://www.youtube.com/channel/UCk6u7EpPrLHbtsdIejsHi3w' target ='blank'><img class ='social youtubeFoot' src ='Img/yT.png' alt ='Give me a subscribe on Youtube!'></a></li>
+            <li><a href ='https://vimeo.com/user85857452' target ='blank'><img class ='social vimeo' src ='Img/iG.png' alt ='Give me a follow on Vimeo!'></a></li>
+          </ul>
+        </div> <!-- end of social -->
+
+        <nav>
+          <ul>
+            <li><a href ='index.html'>Home</a></li>
+            <li><a href ='bio.html'>Bio</a></li>
+            <li><a href =''>Services</a></li>
+            <li id = 'contact'><a href ='contact.html'>Contact</a></li>
+          </ul>
+        </nav> <!-- end of nav -->
+      </div> <!-- end of container -->
+    </footer> <!-- end of footer -->
+
+	
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src ='http://opensource.teamdf.com/visible/jquery.visible.js'></script>
+  <script src ='index.js'></script>
+</body>
+</html>
+
+
+
+

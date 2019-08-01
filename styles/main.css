@@ -1,0 +1,913 @@
+/*
+  main.CSS
+  Colors
+  *******
+  black: #000000
+  darker gray: #222222
+  dark gray: #333333
+  gray: #444444
+  light gray: #eeeeee
+  light blue: #00c0ff
+  dark blue: #0090bf
+*/
+
+/* *****************
+  General Styles
+***************** */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family:;
+  font-size: ;
+  line-height: ;
+  color:;
+  background:;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, rgba(219,240,252,1) 0%,rgba(237, 231, 231, 0.98) 90%);
+  background-attachment: fixed;
+  height:100%;
+}
+
+.iFrame{
+	z-index:-1;
+}
+
+html{
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+
+/* *****************
+  Header / Nav
+***************** */
+#bigImg{
+  width:100%;
+  height:940px;
+  background: url(../img/landingHolder.jpg) no-repeat 50% 50%;
+  background-size:cover;
+  display:table;
+  top:0;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+    /* *****************
+      Social bar
+    ***************** */
+      /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+      .icon-bar {
+        position: fixed;
+        top: 17.7%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left:97.36%;
+        z-index:1;
+      }
+
+      /* Style the icon bar links */
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Style the social media icons with color*/
+      .facebook {
+        background: #3B5998;
+        color: white;
+      }
+
+      .twitter {
+        background: #55ACEE;
+        color: white;
+      }
+
+      .google {
+        background: #dd4b39;
+        color: white;
+      }
+
+      .linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .soundcloud {
+        background: #ff7700;
+        color: white;
+      }
+
+      .spotify {
+        background: #1DB954;
+        color: white;
+      }
+
+      /* hover effects*/ 
+
+      .icon-bar .facebook:hover {
+        background: #111;
+        color: white;
+      }
+
+      .icon-bar .twitter:hover {
+        background: #111;
+        color: white;
+      }
+
+      .icon-bar .google:hover {
+        background: #111;
+        color: white;
+      }
+
+      .icon-bar .linkedin:hover {
+        background: #111;
+        color: white;
+      }
+
+      .icon-bar .youtube:hover {
+        background: #111;
+        color: white;
+      }
+
+      .icon-bar .spotify:hover {
+        background: #111;
+        color: white;
+      }
+
+      .icon-bar .soundcloud:hover {
+        background: #111;
+        color: white;
+      }
+
+
+    /* *****************
+     Side panel 
+    ***************** */
+
+      .sidePanel{
+        height:250px;
+        width:0;
+        position:fixed;
+        z-index:1;
+        top:0;
+        background-color:#111;
+        overflow-x:hidden; /* disabale horizontal scroll*/
+        padding-top:20px;  /* position content 60px from the top*/
+        transition: 0.5s;   /* 0.5s transistion effect to slide in the panel*/
+      }
+
+      .sidePanel a{ /* side panel links*/
+        padding: 8px 8px 8px 32px;
+        margin-left:25%;
+        text-decoration:none;
+        font-size:1.3rem;
+        color:white;
+        display:block;
+        transition:0.3s;
+				z-index:1;
+      }
+
+      .sidePanel a:hover{
+        color:grey;
+      }
+
+      .sidePanel .closebtn{ /* position and styling of close button*/
+        position:absolute;
+        top:0;
+        right:205px;
+        font-size:1.1rem;
+        margin-left:50px;
+      }
+
+      .openbtn{
+        position:fixed;
+        font-size: 1.5rem;
+        cursor:pointer;
+        background-color:#111;
+        color:white;
+        padding:0.5% 0.78125%;
+        border:none;
+        transition: all 0.5s;
+				z-index:1;
+      }
+
+      .openbtn:hover{
+        opacity:0.7;
+      }
+
+ 
+/* *****************
+    Footer 
+ ***************** */     
+
+footer{
+  margin: 5px 0;
+  position:fixed;
+  bottom:-2%;
+  width:100%;
+  background-color:white;
+}
+footer p{
+  float: left;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+
+  -webkit-text-shadow: 2px 2px 9px rgba(0,0,0,0.75);
+  -moz-text-shadow:    2px 2px 9px rgba(0,0,0,0.75);
+  -o-text-shadow:      2px 2px 9px rgba(0,0,0,0.75);
+  text-shadow:         2px 2px 9px rgba(0,0,0,0.75);
+  margin-left:8%;
+}
+
+footer nav{
+  float: right;
+}
+
+footer nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+footer nav ul li {
+  list-style: none;
+  float:left;
+  margin: 0 20px;
+  cursor: pointer;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+
+
+  -webkit-transition: width 0.20s ease-in-out;
+  -moz-transition:    width 0.20s ease-in-out;
+  -o-transition:      width 0.20s ease-in-out;
+  transition:         width 0.20s ease-in-out;
+
+  -webkit-text-shadow: 2px 2px 9px rgba(0,0,0,0.75);
+  -moz-text-shadow:    2px 2px 9px rgba(0,0,0,0.75);
+  -o-text-shadow:      2px 2px 9px rgba(0,0,0,0.75);
+  text-shadow:         2px 2px 9px rgba(0,0,0,0.75);
+}
+
+footer nav ul li a:hover{
+  color: rgba(81, 119, 189, 0.96);
+
+}
+
+footer nav ul li a:active{
+  color: #000;
+}
+
+#contact{
+  margin-right: 0;
+}
+
+/* *****************
+  Footer social
+***************** */
+footer #socialFooter{
+  display: inline;
+  position: absolute;
+  right: 80vh;
+}
+footer #socialFooter ul{
+margin: 0;
+padding: 0;
+}
+footer #socialFooter ul li{
+  list-style: none;
+  float: left;
+  padding: 0 15px;
+}
+
+footer #socialFooter ul li img{
+  width: 90%;
+  height:auto;
+
+  -webkit-transition: width 0.20s ease-in-out;
+  -moz-transition:    width 0.20s ease-in-out;
+  -o-transition:      width 0.20s ease-in-out;
+  transition:         width 0.20s ease-in-out;
+
+}
+
+footer #socialFooter ul li img:hover{
+  width: 100%;
+  height:auto;
+}
+footer #socialFooter ul li img:active{
+  bottom: 1px;
+}
+
+footer nav{
+  margin-right:8%;
+  margin-top:.5%;
+}
+
+/******************
+  video slide in
+******************/
+.iFrame{
+  margin:2% 0;
+}
+
+.come-in{
+  transform: translateY(450px);
+  animation: come-in 1.3s ease forwards;
+}
+
+.come-in: nth-child(odd){
+  animation: 0.6s;
+}
+
+@keyframes come-in{
+  to { transform: translateY(0); }
+}
+
+.videos div h1{
+	display:inline-block;
+	position:relative;
+	left:0%;
+	transition: margin-left 1s;
+}
+
+/******************
+Music section
+******************/
+.musicSection h1{
+	display:inline-block;
+	position:relative;
+	left:48%;
+}
+
+.musicContainer{
+	margin: 0 auto;
+	width:75%;
+	
+}
+
+.musicLinks{
+	font-size:0;
+}
+
+.musicProjects{
+	margin:0 auto;
+	width:57%;
+}
+
+.musicProjects a{
+	transition: opacity 0.5s;
+}
+
+.musicProjects a img {
+	border-radius: 15%;
+}
+
+.musicProjects a:nth-child(1) img{
+	margin: 0 10%;
+}
+
+.singles{
+	margin:0 auto;
+	width:100%;
+	margin-top:3%;
+	margin-bottom:3%;
+	font-size:0;
+}
+
+.singles a {
+	width: 100%;
+	
+}
+
+.musicLinks a:hover{
+	opacity:0.5;
+}
+
+.singles a:nth-child(1){
+	margin-right:7%;
+}
+
+.singles a:nth-child(2){
+	margin-right:5.7%;
+}
+
+.singles a:nth-child(3){
+	margin-right:6%;
+}
+
+.singles a img{
+	border-radius: 15%;
+}
+
+.musicLinks a img{
+	-webkit-box-shadow: 2px 3px 13px -1px rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 13px -1px rgba(0,0,0,0.75);
+}
+
+.musicLinks a:hover div {	
+} 
+
+.singles a div{
+	font-size: 1.1rem;
+	visibility:hidden;
+	text-decoration:none;
+	position:absolute;
+	color:orange;
+	transition: all 0.4s;
+}
+
+.musicProjects a div{
+	font-size: 1.1rem;
+	visibility:hidden;
+	text-decoration:none;
+	position:absolute;
+	color:orange;
+	transition: all 0.4s;
+}
+
+.significant{
+	right:57.5%;
+	top:121.2%;
+}
+
+.jaw{
+	top:121.2%;
+	right:40%;
+}
+
+.one{
+	top:156%;
+	left: 19%;
+}
+
+.two{
+	top:156%;
+	left:39.5%;
+}
+
+.three{
+	top:156%;
+	left:58.5%;
+}
+
+.four{
+	top:156%;
+	left:78.5%;
+}
+
+
+
+
+
+
+
+	/******************
+		Contact Page CSS
+	***************** */
+.conOverlay{
+	height:0;
+	width:100%;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+	overflow:hidden;
+	transition:0.5s;
+}
+
+.overlayContent{
+	position:relative;
+	top:25%;
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+}
+.conOverlay h1{
+	color:white;
+	text-align:center;
+	position:relative;
+	top:25%;
+}
+
+.overlayContent input:nth-child(1),
+.overlayContent input:nth-child(3){
+	height: 38px;
+	width:16%;
+	border-radius:3%;
+	padding-left:.5%;
+	border:0;
+	-webkit-box-shadow: 3px 6px 6px 3px rgba(77,77,77,0.52);
+	-moz-box-shadow: 3px 6px 6px 3px rgba(77,77,77,0.52);
+	box-shadow: 3px 6px 6px 3px rgba(77,77,77,0.52);
+}
+
+.overlayContent input:nth-child(3){
+	margin: 2% 0;
+}
+
+.overlayMessage{
+	padding-left:.5%;
+	border:0;
+	-webkit-box-shadow: 3px 6px 6px 3px rgba(77,77,77,0.52);
+	-moz-box-shadow: 3px 6px 6px 3px rgba(77,77,77,0.52);
+	box-shadow: 3px 6px 6px 3px rgba(77,77,77,0.52);
+}
+
+.conSubmit {
+	margin-top: 2%;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4d4d4d), color-stop(1, #dedbde));
+	background:-moz-linear-gradient(top, #4d4d4d 5%, #dedbde 100%);
+	background:-webkit-linear-gradient(top, #4d4d4d 5%, #dedbde 100%);
+	background:-o-linear-gradient(top, #4d4d4d 5%, #dedbde 100%);
+	background:-ms-linear-gradient(top, #4d4d4d 5%, #dedbde 100%);
+	background:linear-gradient(to bottom, #4d4d4d 5%, #dedbde 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d4d4d', endColorstr='#dedbde',GradientType=0);
+	background-color:#4d4d4d;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #0a000a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #0f070f;
+}
+.conSubmit:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dedbde), color-stop(1, #4d4d4d));
+	background:-moz-linear-gradient(top, #dedbde 5%, #4d4d4d 100%);
+	background:-webkit-linear-gradient(top, #dedbde 5%, #4d4d4d 100%);
+	background:-o-linear-gradient(top, #dedbde 5%, #4d4d4d 100%);
+	background:-ms-linear-gradient(top, #dedbde 5%, #4d4d4d 100%);
+	background:linear-gradient(to bottom, #dedbde 5%, #4d4d4d 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedbde', endColorstr='#4d4d4d',GradientType=0);
+	background-color:#dedbde;
+}
+.conSubmit:active {
+	position:relative;
+	top:1px;
+}
+
+.openContact{
+	height: 45px;
+	width: 90px;
+	background-color: black;
+	border-radius: 0 0 90px 90px;
+	position:relative;
+	left:45%;
+	transition:0.1s;
+	-webkit-box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.75);
+	cursor:pointer;
+}
+.openContact::before{
+	content: '';
+	position:absolute;
+	width: 45px;
+	height:3px;
+	background:white;
+	top:47%;
+	left:9%;
+	transform: rotate(45deg);
+}
+
+.openContact::after{
+	content: '';
+	position:absolute;
+	width: 3px;
+	height: 43px;
+	background:white;
+	top:;
+	left:67%;
+	transform: rotate(45deg);
+}
+
+.openContact:active{
+	-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 1px 4px 0px rgba(0,0,0,0.75);
+	top:-1px;
+	z-index:0;
+}
+
+.closeCon{
+	height: 45px;
+	width: 90px;
+	background-color: white;
+	border-radius:90px 90px 0 0; 
+	position:absolute;
+	left:46.5%;
+	top:95%;
+	-webkit-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
+	-moz-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
+	box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
+}
+
+.closeCon::before{
+	content: '';
+	position:absolute;
+	width: 45px;
+	height:3px;
+	background:black;
+	top:47%;
+	left:9%;
+	transform: rotate(-45deg);
+}
+
+.closeCon::after{
+	content: '';
+	position:absolute;
+	width: 3px;
+	height: 43px;
+	background:black;
+	top:4%;
+	left:67%;
+	transform: rotate(-45deg);
+}
+
+.closeCon:active{
+	-webkit-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
+	-moz-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
+	box-shadow: -1px -5px 11px 10px rgba(77,77,77,0.52);
+	top:95.6%;
+}
+
+
+.contactContainer{
+	position:relative;
+	top:25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																																		/******************
+																																			Other page nav and footer design PAGE CSS VVVVV
+																																		******************/
+																																		
+
+
+/******************
+  Other pages nav bar
+***************** */
+.conNavContainer{
+	height:80px;
+	background-color: gray;
+}
+		
+		
+/******************
+ Bio Side panel 
+***************** */
+
+.conSidePanel{
+	height:80px;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+	display:inline-block;
+  background-color:#111;
+  overflow-y:hidden; /* disabale horizontal scroll*/
+	overflow-x:hidden;
+  padding-top:20px;  /* position content 60px from the top*/
+  transition: 0.2s;   /* 0.5s transistion effect to slide in the panel*/
+}
+
+.conSidePanel a{ /* side panel links*/
+  padding: 8px 8px 8px 25px;
+  margin-left:;
+	display:inline-block;
+  text-decoration:none;
+  font-size:1.2rem;
+  color:white;
+  transition:0.3s;
+	z-index:1;
+}
+
+.conSidePanel a:hover{
+  color:grey;
+}
+
+.conSidePanel .closebtn{ /* position and styling of close button*/
+  position:absolute;
+  top:0;
+  right:205px;
+  font-size:1.1rem;
+  margin-left:50px;
+}
+
+.conOpenbtn{
+  position:fixed;
+  font-size: 1.7rem;
+  cursor:pointer;
+  background-color:#111;
+  color:white;
+  padding:1.15% 0.95%;
+  border:none;
+  transition: all 0.3s;
+}
+
+.conOpenbtn:hover{
+  opacity:0.7;
+}
+			
+.conMenuOffSet{
+	position:relative;
+	left:1%;
+}
+
+/******************
+Social bar
+***************** */
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.con-icon-bar {
+  position: fixed;
+	display:inline-block;
+  top: 2.1%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left:76.19%;
+	font-size:0;
+	width:600px;
+  z-index:1;
+}
+
+/* Style the icon bar links */
+.con-icon-bar a {
+  display: inline-block;
+  text-align: center;
+	padding: 64px 25px 25px 25px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size:1.7rem;
+}
+			
+.con-icon-bar a:nth-child(3){
+	padding: 30px 30px 25px 30px;
+}
+
+/* Style the social media icons with color*/
+.insta {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.facebook {
+  background: #007bb5;
+  color: white;
+	padding:0;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.soundcloud {
+  background: #ff7700;
+  color: white;
+}
+
+.spotify {
+  background: #1DB954;
+  color: white;
+}
+
+/* hover effects*/ 
+
+.con-icon-bar .facebook:hover,
+.con-icon-bar .twitter:hover,
+.con-icon-bar .google:hover,
+.con-icon-bar .insta:hover,
+.con-icon-bar .youtube:hover,
+.con-icon-bar .spotify:hover,
+.con-icon-bar .soundcloud:hover{
+	background: #111;
+  color: white;
+}
+			
+/******************
+Bio Section
+***************** */
+		
+.conContainer{
+	margin: 0 auto;
+	width: 950px;
+	text-align: justify;
+}
+
+
+/******************
+Bio hover
+***************** */
+		.conContainer:hover .fadePic{
+			width:0;
+			border-radius:50%; /*rounds out the image to a circle and width being 0 cause a nice effect*/
+		}
+
+		.conContainer:hover .bioContent{
+			opacity:1;
+			z-index: 1;
+			-webkit-transition: opacity .5s cubic-bezier(.5, -.5, .3, 1.3) .3s;
+			transition: opacity .5s cubic-bezier(.5, -.5, .3, 1.3) .3s; /*cause text to appear through opacity when hovered */
+		}
+/* end of bio hover **/
+.conContent{
+	z-index:0;
+	font-size: 2rem;
+	margin-top:10%;
+	opacity:0;
+	-webkit-transition: opacity .5s cubic-bezier(.5, -.5, .3, 1.3) .2s;
+	transition: opacity .4s cubic-bezier(.5, -.5, .3, 1.3) .2s; 
+	display:inline;
+	}
+	
+.spanWrap{
+	margin-top:10%;
+}
+	
+.conContent img{
+	border-radius: 50%;
+	float:none;
+	-webkit-box-shadow: 2px 3px 13px -1px rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 13px -1px rgba(0,0,0,0.75);
+}
+
+.fadePic{
+	width:39%;
+	position: absolute;
+	left:31%;
+	top:11%;
+	cursor:pointer;
+	z-index:1;
+	border-radius:2%;
+	-webkit-box-shadow: 2px 3px 13px -1px rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 13px -1px rgba(0,0,0,0.75);
+	-webkit-transition: width 0.8s cubic-bezier(.5, -.5, .3, 1.3) 0s, border-radius 0.7s linear 0s;
+	transition: width 0.8s cubic-bezier(.5, -.5, .3, 1.3) 0s, border-radius 0.7s linear 0s;
+}
+
+
+		
