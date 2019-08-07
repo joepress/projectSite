@@ -69,6 +69,7 @@ html{
         transform: translateY(-50%);
         left:97.36%;
         z-index:1;
+				transition:0.3s;
       }
 
       /* Style the icon bar links */
@@ -92,7 +93,7 @@ html{
         color: white;
       }
 
-      .google {
+      .insta {
         background: #dd4b39;
         color: white;
       }
@@ -129,7 +130,7 @@ html{
         color: white;
       }
 
-      .icon-bar .google:hover {
+      .icon-bar .insta:hover {
         background: #111;
         color: white;
       }
@@ -202,7 +203,7 @@ html{
         color:white;
         padding:0.5% 0.78125%;
         border:none;
-        transition: all 0.5s;
+        transition: all 0.3s;
 				z-index:1;
       }
 
@@ -291,7 +292,7 @@ footer nav ul li a:active{
 footer #socialFooter{
   display: inline;
   position: absolute;
-  right: 80vh;
+  right: 90vh;
 }
 footer #socialFooter ul{
 margin: 0;
@@ -675,6 +676,164 @@ Music section
 
 
 
+/******************
+  Upcoming Events
+***************** */
+
+.upContainer{
+	margin: 0 auto;
+	width: 950px;
+	margin-top:5%;
+}
+
+.eventWrapper{
+	margin-top:4%;
+}
+
+.upHeadline h1{
+	font-size: 2rem;
+}
+
+.upHeadline span:nth-child(2),
+.upHeadline span:nth-child(3),
+.upHeadline span:nth-child(4),
+.upHeadline span:nth-child(5)
+{
+	font-size:1.5rem;
+}
+
+
+.upHeadline span:nth-child(2){
+	padding-right:43%;
+	padding-top:0;
+	padding-bottom:0;
+}
+
+.upHeadline span:nth-child(3){
+	padding-right:26%;
+}
+
+.upHeadline span:nth-child(4){
+	padding: 0;
+}
+
+.upHeadline span:nth-child(5){
+	padding-left:1.5%;
+}
+
+.eventWrapper li{
+	list-style:none;
+	padding-bottom:30px;
+}
+
+.eventWrapper ul{
+	display: block;
+	width: 25%;
+	padding-left:0;
+	margin-top:2%;
+}
+
+.eventWrapper ul:nth-child(1){
+	width:8%;
+}
+
+.eventWrapper ul:nth-child(2){
+	width:16%;
+	position:absolute;
+	left:45%;
+	top:33.2%;
+}
+
+.eventWrapper ul:nth-child(3){
+	width:14%;
+	position:absolute;
+	left:65%;
+	top:33.2%;
+}
+
+
+.eventWrapper ul:nth-child(4){
+	width:2%;
+	position:absolute;
+	left:72%;
+	top:33.2%;
+}
+
+.eventWrapper ul:nth-child(4) li a{
+	text-decoration:none;
+	color:black;
+}
+
+
+
+
+
+
+
+/******************
+  Gallery page
+***************** */
+.gallerySection{
+	margin: 0 auto;
+	width: 85%;
+	margin-bottom:5%;
+}
+
+.gallerySection h1{
+	text-align:center;
+}
+
+.gallerySection li{
+	list-style: none;
+	margin: 5% 0;
+}
+
+.gallerySection li a img{
+	border-radius: 5%;
+	width:288px;
+	height:288px;
+	transition: all 0.5s;
+}
+
+.gallerySection li iframe{
+	border-radius: 5%;
+	transition: 0.5s;
+}
+
+.gallerySection li iframe:hover{
+	opacity: 0.5;
+	width: 305px;
+	height:305px;
+}
+
+.gallerySection li img:hover{
+	opacity: 0.5;
+	width: 305px;
+	height:305px;
+}
+
+.gallerySection ul {
+	display: block;
+	position:absolute;
+	padding-left:0;
+	margin-bottom:5%;
+}
+
+.firstRow{
+	
+}
+
+.secondRow{
+	left:43%
+}
+
+.thirdRow{
+	left:77%;
+}
+
+.space{
+	
+}
 
 
 
@@ -687,14 +846,10 @@ Music section
 
 
 
-
-
-
-
-																																		/******************
-																																			Other page nav and footer design PAGE CSS VVVVV
-																																		******************/
-																																		
+/******************
+Other page nav and footer design PAGE CSS VVVVV
+******************/
+	
 
 
 /******************

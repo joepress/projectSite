@@ -1,0 +1,58 @@
+@media (min-width: 320px) and (max-width: 480px) {
+ 
+ body{
+	 width: 114%;
+ }
+#bigImg{
+	width: 100%;
+	background-position: 62%;
+	height: 812px;
+	
+}
+
+.openbtn{
+	position:absolute;
+	font-size: 3rem;
+	width: 114%;
+}
+
+.icon-bar{
+	top:12.3%;
+	left:1px;
+	font-size:0;
+	width:114%;
+	position: absolute;
+	z-index:0;
+}
+
+.icon-bar a{
+	display:inline;
+	padding: 21px 26px;
+	margin: 0 0.01%;
+}
+
+
+.icon-bar a:nth-child(3){
+	padding: 21px 30px;
+}
+
+.icon-bar a:nth-child(2){
+	padding: 21px 25px;
+}
+
+.sidePanel{
+	height: 0;
+	width: 100%;
+}
+
+.sidePanel a:nth-child(1){
+	right:90%;
+	font-size: 2.5rem;
+}
+.sidePanel a {
+	font-size: 1.4rem;
+}
+
+  
+}
+
