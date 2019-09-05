@@ -18,18 +18,22 @@
   box-sizing: border-box;
 }
 
+
 body{
-  font-family:;
+  font-family: 'Oswald', sans-serif;
   font-size: ;
   line-height: ;
   color:;
   background:;
   margin: 0;
   padding: 0;
-  background: radial-gradient(ellipse at center, rgba(219,240,252,1) 0%,rgba(237, 231, 231, 0.98) 90%);
+  background: radial-gradient(ellipse at bottom left, rgba(255,255,255) 0%,rgba(55,59,90) 60%);
   background-attachment: fixed;
   height:100%;
+	transition: all 1s;
+	animation-delay:0.5s
 }
+
 
 .iFrame{
 	z-index:-1;
@@ -47,7 +51,7 @@ html{
 #bigImg{
   width:100%;
   height:940px;
-  background: url(../img/landingHolder.jpg) no-repeat 50% 50%;
+  background: url(../img/per1.jpeg) no-repeat;
   background-size:cover;
   display:table;
   top:0;
@@ -56,6 +60,7 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+	
 } 
     /* *****************
       Social bar
@@ -63,13 +68,13 @@ html{
       /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
       .icon-bar {
         position: fixed;
-        top: 17.7%;
+        top: 19.9%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        left:97.36%;
+        left:97%;
+				transition:0.5s;
         z-index:1;
-				transition:0.3s;
       }
 
       /* Style the icon bar links */
@@ -80,80 +85,24 @@ html{
         transition: all 0.3s ease;
         color: white;
         font-size: 20px;
-      }
-
-      /* Style the social media icons with color*/
-      .facebook {
-        background: #3B5998;
-        color: white;
-      }
-
-      .twitter {
-        background: #55ACEE;
-        color: white;
-      }
-
-      .insta {
-        background: #dd4b39;
-        color: white;
-      }
-
-      .linkedin {
-        background: #007bb5;
-        color: white;
-      }
-
-      .youtube {
-        background: #bb0000;
-        color: white;
-      }
-
-      .soundcloud {
-        background: #ff7700;
-        color: white;
-      }
-
-      .spotify {
-        background: #1DB954;
-        color: white;
+				border-radius: 45%;
+				background:rgba(1,1,1,0);
       }
 
       /* hover effects*/ 
 
-      .icon-bar .facebook:hover {
+      .icon-bar .facebook:hover,
+			.icon-bar .twitter:hover,
+			.icon-bar .insta:hover,
+			.icon-bar .linkedin:hover,
+			.icon-bar .youtube:hover,
+			.icon-bar .spotify:hover,
+			.icon-bar .soundcloud:hover
+			{
         background: #111;
-        color: white;
+        color: #C86031;
       }
 
-      .icon-bar .twitter:hover {
-        background: #111;
-        color: white;
-      }
-
-      .icon-bar .insta:hover {
-        background: #111;
-        color: white;
-      }
-
-      .icon-bar .linkedin:hover {
-        background: #111;
-        color: white;
-      }
-
-      .icon-bar .youtube:hover {
-        background: #111;
-        color: white;
-      }
-
-      .icon-bar .spotify:hover {
-        background: #111;
-        color: white;
-      }
-
-      .icon-bar .soundcloud:hover {
-        background: #111;
-        color: white;
-      }
 
 
     /* *****************
@@ -166,14 +115,15 @@ html{
         position:fixed;
         z-index:1;
         top:0;
-        background-color:#111;
+        background-color:rgba(1,1,1,0.4);
         overflow-x:hidden; /* disabale horizontal scroll*/
         padding-top:20px;  /* position content 60px from the top*/
         transition: 0.5s;   /* 0.5s transistion effect to slide in the panel*/
+				border-bottom-right-radius: 40%;
       }
 
       .sidePanel a{ /* side panel links*/
-        padding: 8px 8px 8px 32px;
+        padding: 3.2% 3.2% 11.2% 5.2%;
         margin-left:25%;
         text-decoration:none;
         font-size:1.3rem;
@@ -189,9 +139,9 @@ html{
 
       .sidePanel .closebtn{ /* position and styling of close button*/
         position:absolute;
-        top:0;
-        right:205px;
-        font-size:1.1rem;
+        bottom: 68%;
+        right:86%;
+        font-size:2.5rem;
         margin-left:50px;
       }
 
@@ -203,7 +153,7 @@ html{
         color:white;
         padding:0.5% 0.78125%;
         border:none;
-        transition: all 0.3s;
+        transition: all 0.5s;
 				z-index:1;
       }
 
@@ -217,11 +167,11 @@ html{
  ***************** */     
 
 footer{
-  margin: 5px 0;
+  margin: 1% 0;
   position:fixed;
   bottom:-2%;
   width:100%;
-  background-color:white;
+  background-color:rgb(55,59,79);
 }
 footer p{
   float: left;
@@ -250,6 +200,7 @@ footer nav ul li a{
   text-decoration: none;
   list-style: none;
   color: black;
+	transition: all 0.3s
 }
 footer nav ul li {
   list-style: none;
@@ -273,8 +224,10 @@ footer nav ul li {
   text-shadow:         2px 2px 9px rgba(0,0,0,0.75);
 }
 
+
+
 footer nav ul li a:hover{
-  color: rgba(81, 119, 189, 0.96);
+  color: rgb(255,255,255);
 
 }
 
@@ -288,11 +241,15 @@ footer nav ul li a:active{
 
 /* *****************
   Footer social
-***************** */
+******************
+footer{
+	background-color:#2E2B45;
+}*/
 footer #socialFooter{
   display: inline;
   position: absolute;
   right: 90vh;
+	font-size:2.3rem;
 }
 footer #socialFooter ul{
 margin: 0;
@@ -301,7 +258,11 @@ padding: 0;
 footer #socialFooter ul li{
   list-style: none;
   float: left;
-  padding: 0 15px;
+  padding: 0 17px;
+}
+
+footer #socialFooter ul li a{
+	color: white;
 }
 
 footer #socialFooter ul li img{
@@ -315,17 +276,16 @@ footer #socialFooter ul li img{
 
 }
 
-footer #socialFooter ul li img:hover{
-  width: 100%;
-  height:auto;
+footer #socialFooter ul li:hover{
+  font-size:2.5rem;
 }
-footer #socialFooter ul li img:active{
-  bottom: 1px;
+footer #socialFooter ul li a:active{
+  color:black;
 }
 
 footer nav{
   margin-right:8%;
-  margin-top:.5%;
+  margin-top:1.1%;
 }
 
 /******************
@@ -1064,5 +1024,3 @@ Bio hover
 	transition: width 0.8s cubic-bezier(.5, -.5, .3, 1.3) 0s, border-radius 0.7s linear 0s;
 }
 
-
-		

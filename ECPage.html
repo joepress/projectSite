@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' href='styles/mobile.css'>
+        <script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title></title>
+    </head> <!-- end of head -->
+    
+        <body>
+            <header class='animated fadeIn eventHead '>
+                <div class='menu'>
+                    <span class='bar'></span>
+                </div> <!-- end of menu  -->
+                <nav class='nav'>
+                    <div class='overlay'>
+                        <ul>
+                            <li><a href='#'>Home</a></li>
+                            <li><a href='#'>Events/Contact</a></li>
+                            <li><a href='#'>Gallery</a></li>
+                        </ul><!-- end of unordered list -->
+                    </div> <!-- end of overlay -->
+                </nav> <!-- end of nav -->
+                
+                <div class='socialBar socialE'>
+                    <ul>
+                        <li><a href="#" class="social one"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" class="social two"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#" class=" social three"><i class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="#" class="social four"><i class="fa fa-spotify"></i></a></li>
+                        <li><a href="#" class="social five"><i class="fa fa-twitter"></i></a></li>
+                        <li class='lastIcon'><a href="#" class="social six"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div><!-- end of socialBar-->
+            </header><!-- end of header-->
+
+
+            <section id='statCon' class='conOverlay'>
+                    <a href="javascript:void(0)" class="closeCon" onclick="closeCon()"></a>
+                        <h1>Contact</h1>
+                        <form method='post' action='conSubmit.php' class='overlayContent' target ='blank'>
+                            <input id ='name' class='overlayName' type= 'text' placeholder='First & Last name here' required><br>
+                            <input id ='email' class='overlayEmail' type= 'text' placeholder='Email' required><br>
+                            <textarea rows='10' cols='50' id ='message' class='overlayMessage' placeholder='message aqui' required></textarea><br>
+                            <input type='submit' class='conSubmit'>
+                        </form>		
+            </section><!-- end of contact overlay -->
+
+            <div class='contactBtn animated fadeIn' href="javascript:void(0)" onclick ="openContact()">
+                <a><i class="fas fa-envelope-square"></i></a>
+            </div>
+                
+            <div class ='contain'>
+                <section class ='upcomingEvents animated fadeIn'>
+                
+                    <div class='upContainer'>
+                    
+                        <div class ='upHeadline'>
+                        
+                            <h1>Upcoming Events</h1>
+                            <div>
+                                <span>Date</span>
+                                <span>Venue</span>
+                                <span>Location</span>
+                                <span>Tickets</span>
+                            </div>
+                        </div> <!-- end of headline -->
+                        
+                        <div class ='eventWrapper'>
+                        
+                            <ul class ='upDates'>
+                                <li>8/10/2019</li>
+                                <li>8/10/2019</li>
+                                <li>8/10/2019</li>
+                            </ul><!-- end of individual event dates-->
+                            
+                            <ul class ='upVenues'>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                            </ul><!-- end of individual event Venue-->
+                            
+                            <ul class ='upLocation'>
+                                <li>Long island, NY</li>
+                                <li>Long island, NY</li>
+                                <li>Long island, NY</li>
+                            </ul><!-- end of individual event location-->
+                            
+                            <ul class ='upTickets'>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                            </ul><!-- end of individual event tickets-->
+                        
+                        </div><!-- end of events wrapper -->
+                        
+                        <ul></ul> <!-- end of -->
+                    </div><!-- end of container -->
+                    
+                </section><!-- end of upcoming events -->
+
+                <section class ='letterSection animated fadeIn delay-2s'>
+                    <div class='newsLetterImg'>     
+                    </div>
+
+                    <div class ='newsLetter'>
+                        <div class ='newsTitle'><h2>News Letter</h2></div>
+                        <form action ='#' method ='post'>
+                            <input type ='text' class ='newsEmail' placeholder ='Register Email Here' required>
+                           <div class ='newsSubmit'><input class ='letterSubmit' type ='submit'></div>
+                        </form>
+                    </div>
+                </section> <!-- end of news letter-->
+
+                <footer class='animated fadeIn delay-1s'>
+                        <div class=copyRight>
+                              <h3> James Pressley Photography &copy; 2018</h3>
+                            </div>
+                              <div class ='socialFooter'>
+                                <ul>
+                                  <li><a href="#" class=""><i class="fa fa-instagram"></i></a></li>
+                                  <li><a href="#" class=""><i class="fa fa-youtube"></i></a> </li>
+                                  <li><a href="#" class=""><i class="fa fa-soundcloud"></i></a></li>
+                                </ul>
+                              </div> <!-- end of social -->
+                      
+                              <div class= 'footerNav'>
+                                <ul>
+                                  <li><a href ='index.html'>Home</a></li>
+                                  <li><a href ='Gallery.html'>Gallery</a></li>
+                                  <li id = 'contact'><a href='contact_event.html'>Events/Contact</a></li>
+                                </ul>
+                              </div> <!-- end of nav -->
+                            </div> <!-- end of container -->
+                          </footer> <!-- end of footer -->
+            </div>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src ='mobile.js'></script>  
+</body>
+</html>

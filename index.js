@@ -1,10 +1,11 @@
  // menu to hide and come back
   function openNav(){
-		if(screen.width = '375'){
+		if(screen.width <='375'){
 			document.getElementById("navSidePanel").style.height = '15%';
 			document.getElementById("menuBtn").style.height = '0';
 			document.getElementById("menuBtn").style.padding = '0 0';
 			document.getElementById("menuOffSet").style.display = 'none';
+			console.log(screen.width);
 			document.getElementById("social-bar").style.top = '21.9%';
 		}
 		else{
@@ -18,7 +19,7 @@
 }
 
 	function closeNav(){
-		if(screen.width = '375'){
+		if(screen.width <= '375'){
 			document.getElementById("menuBtn").style.height = '8.2%';
 			document.getElementById("menuOffSet").style.display = 'unset';
 			document.getElementById("navSidePanel").style.height ='0';
@@ -78,7 +79,7 @@ window.onscroll = function() {
 }
 
 
-var prevScrollpos = window.pageYOffset;
+/*var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -91,7 +92,7 @@ window.onscroll = function() {
     document.getElementById("social-bar").classList.add('animated', 'zoomOutRight' ,'delay-0.5s');
   }
   prevScrollpos = currentScrollPos;
-}
+}*/
 
 // onscroll the videos appear
 
