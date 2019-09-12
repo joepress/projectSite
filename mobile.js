@@ -15,6 +15,36 @@ function closeCon(){
 	$('.openContact').css('visibility', 'visible')
 }
 
+function openMedia(){
+    $('.galleryMedia').css('display', 'unset');
+    $('.galleryMusic').toggleClass('fadedOut');
+    $('.galleryMedia').toggleClass('fadedIn');
+    $('.galleryMedia').removeClass('fadedOut');
+    $('.galleryMusic').removeClass('fadedIn');
+   /* $('.galleryMusic').css('display', 'none');
+    $('.galleryMedia').css('display', 'unset');
+    $('.galleryMedia').css('display', 'flex');*/
+    $('.mediaBtn').css('visibility', 'hidden');
+    $('.musicBtn').css('visibility', 'visible');
+}
+
+function closeMedia(){
+    $('.galleryMedia').css('display', 'none');
+    $('.galleryMedia').removeClass('fadedIn');
+    $('.galleryMedia').toggleClass('fadedOut');
+    $('.galleryMusic').removeClass('fadedOut');
+    $('.galleryMusic').toggleClass('fadedIn');
+    /*$('.galleryMedia').css('display', 'none');
+    $('.galleryMusic').css('display', 'unset');
+    $('.galleryMusic').css('display', 'flex');*/
+    $('.musicBtn').css('visibility', 'hidden');
+    $('.mediaBtn').css('visibility', 'visible');
+}
+
+function fade(){
+    $('.galleryMusic').addClass('animated fadeIn')
+}
+
 // onscroll the images appear
 
 $(window).scroll(function(event) {
