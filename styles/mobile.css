@@ -1,6 +1,15 @@
-/*Global colors*/
+/*Global colors
 
+orange color - #C86031
+
+purple color - rgb(55,59,79)
+
+*/
 /*Global style*/
+html, body{
+    width: 100%;
+    height:100%;
+}
 *,
 *::before,
 *::after{
@@ -11,11 +20,10 @@
 
 html{
     font-size: 10px;
+    font-family: 'Oswald', sans-serif
 }
 
-html, body{
 
-}
 
 li{
     list-style: none;
@@ -31,6 +39,10 @@ a{
     font-size: 2.1rem;
 }
 
+body{
+    background: linear-gradient(-90deg, rgb(55,59,79),rgb(74, 79, 104), rgb(115, 118, 134), rgb(199, 197, 197), rgb(206, 200, 200));/*linear-gradient(-45deg, rgb(55,59,79), rgb(165, 166, 173), #fff);*/
+    background-repeat: repeat-y;
+}
 
         /*Header*/
 header{
@@ -120,7 +132,7 @@ header{
         height:6rem;
         line-height:6rem;
         position: relative;
-        z-index: 1;
+        z-index: ;
     }
 
     .overlay{
@@ -130,7 +142,7 @@ header{
         right:0;
         bottom:0;
         left:0;
-        z-index:2;
+        z-index:;
         transition:all 650ms;
         transform: scale(0);
         opacity: 0;
@@ -142,7 +154,12 @@ header{
         flex-direction: column;
         justify-content: center;
         height:100%;
+        font-size:2rem;
         z-index: ;
+    }
+
+    .overlay ul li {
+        padding: 3rem 0;
     }
 
     .menuOpen{
@@ -152,7 +169,7 @@ header{
 
     .overlay ul li a:hover,
     .overlay ul li a .active:hover{
-        color:grey;
+        color: #C86031;
     }
 
                 /*Nav Social bar*/
@@ -295,7 +312,7 @@ header{
 footer{
     width:100%;
     display:grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 2rem;
     text-align:center;
     background: rgb(55,59,79);
     position: fixed;
@@ -304,6 +321,10 @@ footer{
     -moz-box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.75);
     box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.75);
     z-index: -1;
+}
+
+.ecFoot{
+    z-index: 0;
 }
 
 .socialFooter ul li{
@@ -331,45 +352,59 @@ footer{
 }
 .copyRight h3{
     order:1;
-    padding-top:1rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
-
-
-
-
-
 
 /*Contact Page Header*/
 
 .eventHead{
     background: none;
-    height: 9vh;
+    height: 7rem;
     animation-delay: 300ms;
 }
 
 .socialE{
-    width:89%;
-    position: relative;
-    bottom:4rem;
+    width:87%;
+    position: absolute;
+    top:1rem;
 }
 .socialE ul li a{
     color: black;
+}
+
+.mobileDates{
+    width:90%;
+    margin: 0 auto;
+    margin-top:2rem;
+    animation-delay: 1.5s;
+    position: relative;
+    margin-bottom: 34rem;
+}
+
+.mobileDates ul li{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mobileDates ul{
+    margin-bottom:5rem;
 }
 
 /*Contact upcoming events section*/
 .upcomingEvents{
     width:90%;
     margin: 0 auto;
-    margin-top:9rem;
+    margin-top: 2rem; /*9rem; desktop*/
     animation-delay: 1.5s;
     position: relative;
-    z-index: -1;
+    z-index: ;
 }
 
 .upHeadline h1{
     font-size:3rem;
-    margin-bottom:2rem;
+    margin-bottom:2.5rem;
+    text-align: center;
 }
 
 .upHeadline div{
@@ -377,25 +412,31 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    display: none;
+/* margin:0 auto;
+    width:85%; desktop*/ 
 }
 
-.upHeadline div span:nth-child(3){
-    position: relative;
-    left:8.5rem;
+.upHeadline div span{
+    width:100%;
+    
 }
 
 .upHeadline div span:nth-child(2){
-    position: relative;
-    left:6rem;
+    text-align: center;
+}
+
+.upHeadline div span:nth-child(3){
+    text-align: right;
+    margin-right:1rem;
 }
 
 .upHeadline div span:nth-child(4){
-    position: relative;
-    left:2rem;
+    text-align: left;  
 }
 
 .eventWrapper li{
-	padding-bottom:3rem;
+	padding-bottom:5rem;
 }
 
 .eventWrapper ul{
@@ -410,6 +451,7 @@ footer{
     justify-content: space-between;
     font-size: 1.7rem;
     text-align: center;
+    display:none;
 }
 
 .upDates li{
@@ -545,10 +587,25 @@ footer{
 	border-radius:90px 90px 0 0; 
 	position:absolute;
 	left:42%;
-	top:90%;
+	top:88%;
 	-webkit-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
 	-moz-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
 	box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
+}
+
+.fae{
+    color:black;
+    font-size:2.5rem;
+    padding-left: 3.7rem;
+    padding-top: 1.5rem;
+}
+
+.closeCon:active{
+    height:4.3rem;
+    width:8.8rem;
+    -webkit-box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
+	-moz-box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
+	box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
 }
 
 /*News Letter Section*/
@@ -569,8 +626,20 @@ footer{
     -moz-box-shadow: 0px -1px 20px -2px rgba(0,0,0,0.75);
     box-shadow: 0px -1px 20px -2px rgba(0,0,0,0.75);
     overflow: hidden;
+    position: fixed;
+    bottom:7rem;
+    z-index: ;
+}
+
+.letterClose{
+    font-size: 3rem;
     position: relative;
-    z-index: -1;
+    top:-1rem;
+    left:47%;
+}
+
+.letterClose a{
+    color: white;
 }
 
 .newsLetterImg{
@@ -666,14 +735,15 @@ footer{
 /*Gallery Page Music Portion Design*/
 
 .galleryFoot{
-    z-index: 1;
+    z-index: 0;
     animation-delay: 300ms;
 }
 
 .galleryTitle{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 2.5px #000000;
+    cursor: default;
 }
 
 .media{
@@ -681,22 +751,21 @@ footer{
 }
 
 .music{
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 
 .galleryMusic{
     width:98%;
     height: 70vh;
     position: relative;
-    z-index: -1;
+    z-index: ;
     top: 7vh;
     margin: 0 auto;
-    transition: visibility .5s;
 }
 
 .firstRow{
     position: relative;
-    z-index: -1;
+    z-index: ;
     margin-bottom: 14rem;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -724,31 +793,39 @@ footer{
 
 .mediaBtn{
     border-radius: 9rem 9rem 0 0;
-    background-color: black;
+    background-color:#000;
     height: 4.5rem;
     width: 9rem;
     position: fixed;
     left: 50%;
-    bottom:6.55rem;
+    bottom:6.6rem;
     margin-left:-4.5rem;
     -webkit-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
 	-moz-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
     box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
     animation-delay: 300ms;
+    cursor:pointer;
 }
 
 .mediaBtn:active{
-    bottom:6.2rem;
+    bottom:6.4rem;
+    -webkit-box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
+	-moz-box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
+    box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
 }
 
+.fao{
+  font-size: 2rem;
+  color:white;
+  padding-left:3rem;
+  padding-top: 1.3rem;
+}
+
+/*.fas:hover{
+    color: #C86031;
+}*/
 
 /* Gallery Page Media Portion design*/
-
-.mediaColumnOne ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .mediaColumnOne{
     margin-bottom: 3rem;
@@ -788,7 +865,7 @@ footer{
     'videoTwo videoTwo videoTwo videoTwo';
     grid-gap: 1rem;
     position: relative;
-    z-index: -1;
+    z-index: ;
 }
 
 .mediaColumnOne iframe{
@@ -814,7 +891,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem; 
     position: relative;
-    z-index: -1;  
+    z-index: ;  
     margin-bottom:2rem;
 }
 
@@ -824,18 +901,29 @@ footer{
     height: 4.5rem;
     width: 9rem;
     position: fixed;
-    bottom: 6.4rem;
+    bottom: 6.8rem;
     left: 50%;
     margin-left:-4.5rem;
     -webkit-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
 	-moz-box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
     box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
     visibility: hidden;
+    cursor:pointer;
 }
 
 .musicBtn:active{
-    bottom: 6rem;
+    bottom: 6.6rem;
+    -webkit-box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
+	-moz-box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
+    box-shadow: -1px -5px 11px 14px rgba(77,77,77,0.52);
 }
+
+.fass{
+    font-size: 2rem;
+    color:white;
+    padding-left:3.3rem;
+    padding-top: 1.3rem;
+  }
 
 /*Reusable classes (to be used they need to be at the bottom*/  
 
@@ -845,8 +933,18 @@ footer{
     transition: visibility 1s linear 1000ms, opacity 300ms;
 }
 
+.fadingOut{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 200ms linear 300ms, opacity 300ms;
+}
+
 .fadedIn{
     visibility: visible;
     opacity: 1;
     transition: visibility 1s linear 200ms, opacity 500ms;
+}
+
+.layer{
+    z-index:-1;
 }

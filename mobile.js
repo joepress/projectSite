@@ -1,13 +1,21 @@
 $('.menu').on('click', function(){
     $(this).toggleClass('active');
     $('.overlay').toggleClass('menuOpen');
+    $('.galleryMusic').toggleClass('layer');
+    $('.galleryFoot').toggleClass('layer');
+    $('.mediaBtn').toggleClass('layer');
+    $('.musicBtn').toggleClass('layer');
+    $('.galleryMedia').toggleClass('layer');
+    $('.contactBtn').toggleClass('layer');
+    $('.letterSection').toggleClass('layer');
+    $('.upcomingEvents').toggleClass('layer');
 });
 
 
 
 function openContact(){
 	$('.conOverlay').css('height', '100%');
-	$('.openContact').css('visibility', 'hidden')
+    $('.openContact').css('visibility', 'hidden')
 }
 
 function closeCon(){
@@ -21,9 +29,6 @@ function openMedia(){
     $('.galleryMedia').toggleClass('fadedIn');
     $('.galleryMedia').removeClass('fadedOut');
     $('.galleryMusic').removeClass('fadedIn');
-   /* $('.galleryMusic').css('display', 'none');
-    $('.galleryMedia').css('display', 'unset');
-    $('.galleryMedia').css('display', 'flex');*/
     $('.mediaBtn').css('visibility', 'hidden');
     $('.musicBtn').css('visibility', 'visible');
 }
@@ -34,15 +39,17 @@ function closeMedia(){
     $('.galleryMedia').toggleClass('fadedOut');
     $('.galleryMusic').removeClass('fadedOut');
     $('.galleryMusic').toggleClass('fadedIn');
-    /*$('.galleryMedia').css('display', 'none');
-    $('.galleryMusic').css('display', 'unset');
-    $('.galleryMusic').css('display', 'flex');*/
     $('.musicBtn').css('visibility', 'hidden');
     $('.mediaBtn').css('visibility', 'visible');
 }
 
 function fade(){
     $('.galleryMusic').addClass('animated fadeIn')
+}
+
+function closeLetter(){
+    $('.letterSection').addClass('fadingOut')
+    $('.mobileDates').css('margin-bottom', '10rem')
 }
 
 // onscroll the images appear

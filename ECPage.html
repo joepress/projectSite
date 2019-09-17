@@ -7,6 +7,7 @@
         <script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='styles/mQuery.css' type='text/css'>
         
         <title></title>
     </head> <!-- end of head -->
@@ -19,9 +20,9 @@
                 <nav class='nav'>
                     <div class='overlay'>
                         <ul>
-                            <li><a href='#'>Home</a></li>
-                            <li><a href='#'>Events/Contact</a></li>
-                            <li><a href='#'>Gallery</a></li>
+                            <li><a href='index.html'>Home</a></li>
+                            <li><a href='ECPage.html'>Events/Contact</a></li>
+                            <li><a href='galleryPage.html'>Gallery</a></li>
                         </ul><!-- end of unordered list -->
                     </div> <!-- end of overlay -->
                 </nav> <!-- end of nav -->
@@ -40,7 +41,7 @@
 
 
             <section id='statCon' class='conOverlay'>
-                    <a href="javascript:void(0)" class="closeCon" onclick="closeCon()"></a>
+                    <div><a href="javascript:void(0)" class="closeCon" onclick="closeCon()"><i class="fas fae fa-angle-double-up"></i></a></div>
                         <h1>Contact</h1>
                         <form method='post' action='conSubmit.php' class='overlayContent' target ='blank'>
                             <input id ='name' class='overlayName' type= 'text' placeholder='First & Last name here' required><br>
@@ -51,7 +52,7 @@
             </section><!-- end of contact overlay -->
 
             <div class='contactBtn animated fadeIn' href="javascript:void(0)" onclick ="openContact()">
-                <a><i class="fas fa-envelope-square"></i></a>
+                <a><i class="fas fass fa-paper-plane"></i></a>
             </div>
                 
             <div class ='contain'>
@@ -69,6 +70,45 @@
                                 <span>Tickets</span>
                             </div>
                         </div> <!-- end of headline -->
+
+                        <div class ='mobileDates'>
+                        
+                            <ul class ='mFirstR'>
+                                <li>8/10/2019</li>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                                <li>Long island, NY</li>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                            </ul><!-- end of most recent date-->
+                            
+                            <ul class ='mSecondR'>
+                                <li>8/10/2019</li>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                                <li>Long island, NY</li>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                            </ul><!-- end of second recent date-->
+                            
+                            <ul class ='mThirdR'>
+                                <li>8/10/2019</li>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                                <li>Long island, NY</li>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                            </ul><!-- end of third recent date-->
+
+                            <ul class ='mThirdR'>
+                                <li>8/10/2019</li>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                                <li>Long island, NY</li>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                            </ul><!-- end of third recent date-->
+
+                            <ul class ='mThirdR'>
+                                <li>8/10/2019</li>
+                                <li>Northwell Health at Jones Beach Theater</li>
+                                <li>Long island, NY</li>
+                                <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
+                            </ul><!-- end of third recent date-->
+                        
+                        </div><!-- end of events wrapper -->
                         
                         <div class ='eventWrapper'>
                         
@@ -106,7 +146,7 @@
                 <section class ='letterSection animated fadeIn delay-2s'>
                     <div class='newsLetterImg'>     
                     </div>
-
+                    <div class ='letterClose'><a href="javascript:void(0)" onclick="closeLetter()">&times;</a></div>
                     <div class ='newsLetter'>
                         <div class ='newsTitle'><h2>News Letter</h2></div>
                         <form action ='#' method ='post'>
@@ -116,7 +156,7 @@
                     </div>
                 </section> <!-- end of news letter-->
 
-                <footer class='animated fadeIn delay-1s'>
+                <footer class='animated fadeIn delay-1s ecFoot'>
                         <div class=copyRight>
                               <h3> James Pressley Photography &copy; 2018</h3>
                             </div>
@@ -131,8 +171,8 @@
                               <div class= 'footerNav'>
                                 <ul>
                                   <li><a href ='index.html'>Home</a></li>
-                                  <li><a href ='Gallery.html'>Gallery</a></li>
-                                  <li id = 'contact'><a href='contact_event.html'>Events/Contact</a></li>
+                                  <li><a href ='galleryPage.html'>Gallery</a></li>
+                                  <li id = 'contact'><a href='ECPage.html'>Events/Contact</a></li>
                                 </ul>
                               </div> <!-- end of nav -->
                             </div> <!-- end of container -->
