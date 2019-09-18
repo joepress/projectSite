@@ -10,6 +10,7 @@ $('.menu').on('click', function(){
     $('.upcomingEvents').toggleClass('layer');
     $('.musicProjects a').toggleClass('layer');
     $('.single').toggleClass('layer');
+    $('.iFrameContainer').toggleClass('layer');
     $('footer').toggleClass('layer');
 });
 

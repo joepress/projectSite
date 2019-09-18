@@ -275,7 +275,11 @@ header{
 .iFrameContainer{
     margin:2% 0;
     position: relative;
-    z-index: -1;
+    z-index: 0;
+  }
+
+  .last{
+      margin-bottom: 10rem;
   }
   
   .come-in{
