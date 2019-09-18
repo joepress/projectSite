@@ -20,7 +20,7 @@
                 <nav class='nav'>
                     <div class='overlay'>
                         <ul>
-                            <li><a href='index.html'>Home</a></li>
+                            <li><a href='mobile.html'>Home</a></li>
                             <li><a href='ECPage.html'>Events/Contact</a></li>
                             <li><a href='galleryPage.html'>Gallery</a></li>
                         </ul><!-- end of unordered list -->
@@ -44,9 +44,9 @@
                     <div><a href="javascript:void(0)" class="closeCon" onclick="closeCon()"><i class="fas fae fa-angle-double-up"></i></a></div>
                         <h1>Contact</h1>
                         <form method='post' action='conSubmit.php' class='overlayContent' target ='blank'>
-                            <input id ='name' class='overlayName' type= 'text' placeholder='First & Last name here' required><br>
-                            <input id ='email' class='overlayEmail' type= 'text' placeholder='Email' required><br>
-                            <textarea rows='10' cols='50' id ='message' class='overlayMessage' placeholder='message aqui' required></textarea><br>
+                           <div class ='conNa'><input id ='name' class='overlayName' type= 'text' placeholder='First & Last name here' required><br></div>
+                            <div class ='conEm'><input id ='email' class='overlayEmail' type= 'text' placeholder='Email' required><br></div>
+                            <div class ='conMe'><textarea rows='10' cols='50' id ='message' class='overlayMessage' placeholder='message aqui' required></textarea><br></div>
                             <input type='submit' class='conSubmit'>
                         </form>		
             </section><!-- end of contact overlay -->
@@ -146,11 +146,12 @@
                 <section class ='letterSection animated fadeIn delay-2s'>
                     <div class='newsLetterImg'>     
                     </div>
-                    <div class ='letterClose'><a href="javascript:void(0)" onclick="closeLetter()">&times;</a></div>
+                    <div class ='letterClose' onclick="closeLetter()"><a href="javascript:void(0)">&times;</a></div>
                     <div class ='newsLetter'>
-                        <div class ='newsTitle'><h2>News Letter</h2></div>
+                        
                         <form action ='#' method ='post'>
-                            <input type ='text' class ='newsEmail' placeholder ='Register Email Here' required>
+                            <div class ='newsTitle'><h2>News Letter</h2></div>
+                            <div class='newsIn'><input type ='text' class ='newsEmail' placeholder ='Register Email Here' required></div>
                            <div class ='newsSubmit'><input class ='letterSubmit' type ='submit'></div>
                         </form>
                     </div>
@@ -158,7 +159,7 @@
 
                 <footer class='animated fadeIn delay-1s ecFoot'>
                         <div class=copyRight>
-                              <h3> James Pressley Photography &copy; 2018</h3>
+                              <h3> LifeStat Music &copy; 2019</h3>
                             </div>
                               <div class ='socialFooter'>
                                 <ul>
@@ -170,7 +171,7 @@
                       
                               <div class= 'footerNav'>
                                 <ul>
-                                  <li><a href ='index.html'>Home</a></li>
+                                  <li><a href ='mobile.html'>Home</a></li>
                                   <li><a href ='galleryPage.html'>Gallery</a></li>
                                   <li id = 'contact'><a href='ECPage.html'>Events/Contact</a></li>
                                 </ul>

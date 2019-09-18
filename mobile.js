@@ -2,13 +2,15 @@ $('.menu').on('click', function(){
     $(this).toggleClass('active');
     $('.overlay').toggleClass('menuOpen');
     $('.galleryMusic').toggleClass('layer');
-    $('.galleryFoot').toggleClass('layer');
     $('.mediaBtn').toggleClass('layer');
     $('.musicBtn').toggleClass('layer');
     $('.galleryMedia').toggleClass('layer');
     $('.contactBtn').toggleClass('layer');
     $('.letterSection').toggleClass('layer');
     $('.upcomingEvents').toggleClass('layer');
+    $('.musicProjects a').toggleClass('layer');
+    $('.single').toggleClass('layer');
+    $('footer').toggleClass('layer');
 });
 
 
