@@ -277,10 +277,6 @@ header{
     position: relative;
     z-index: 0;
   }
-
-  .last{
-      margin-bottom: 10rem;
-  }
   
   .come-in{
     transform: translateY(450px);
