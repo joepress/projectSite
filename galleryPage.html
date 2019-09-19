@@ -3,12 +3,14 @@
 <head>
         <meta charset='UTF-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' type='text/css' href='styles/mobile.css'>
+        <link rel='stylesheet' type='text/css' href='styles/main.css'>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' type='text/css' href='styles/mQuery.css'>
         
-        <title></title>
+        <title>Gallery</title>
     </head> <!-- end of head -->
     
         <body>
@@ -19,21 +21,21 @@
                 <nav class='nav'>
                     <div class='overlay'>
                         <ul>
-                            <li><a href='#'>Home</a></li>
-                            <li><a href='#'>Events/Contact</a></li>
-                            <li><a href='#'>Gallery</a></li>
+                            <li><a href='index.html'>Home</a></li>
+                            <li><a href='ECPage.html'>Events/Contact</a></li>
+                            <li><a href='galleryPage.html'>Gallery</a></li>
                         </ul><!-- end of unordered list -->
                     </div> <!-- end of overlay -->
                 </nav> <!-- end of nav -->
                 
-                <div class='socialBar socialE'>
+                <div class='socialBar eventSocial'>
                     <ul>
-                        <li><a href="#" class="social one"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#" class="social two"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#" class=" social three"><i class="fa fa-soundcloud"></i></a></li>
-                        <li><a href="#" class="social four"><i class="fa fa-spotify"></i></a></li>
-                        <li><a href="#" class="social five"><i class="fa fa-twitter"></i></a></li>
-                        <li class='lastIcon'><a href="#" class="social six"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/yolifestat/" target='_blank' class="social one"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/staatback" target='_blank' class="social two"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://soundcloud.com/lifestat" class=" social three"><i class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="https://open.spotify.com/artist/3j8l4UmgeHV1f2z4YHnAXY?si=MK70TjDBSPKBuWZJaPPdDw" target='_blank' class="social four"><i class="fa fa-spotify"></i></a></li>
+                        <li><a href="https://twitter.com/statback" target='_blank' class="social five"><i class="fa fa-twitter"></i></a></li>
+                        <li class='lastIcon'><a href="https://www.facebook.com/eugenestatback.pressley" target='_blank' class="social six"><i class="fa fa-facebook"></i></a></li>
                     </ul>
                 </div><!-- end of socialBar-->
             </header><!-- end of header-->
@@ -66,9 +68,9 @@
                     
                 </section> <!-- end of media section-->
 
-                <div class='mediaBtn animated fadeIn' onclick ='openMedia()'></div><!-- media button -->
+                <div class='mediaBtn animated fadeIn' onclick ='openMedia()'><i class="fas fao fa-photo-video"></i></div><!-- media button -->
 
-                <div class ='musicBtn' onclick ='closeMedia()'></div> <!-- music button (media close) -->
+                <div class ='musicBtn' onclick ='closeMedia()'><i class="fas fass fa-exclamation-triangle"></i></div> <!-- music button (media close) -->
 
                 <section class ='galleryMusic'> 
 
@@ -77,39 +79,59 @@
                     </div> <!-- end of music title-->
 
                     <div class ='firstRow'>
-                        <div class='mOne'><a href ='#'><img src='img/bioPic.jpg'></a></div>
+                        <div class='mOne'><a href ='https://embeds.datpiff.com/mixtape/700457/'><img src='img/bioPic.jpg'></a></div>
                         <div class='mTwo'><a href ='#'><img src='img/bioPic.jpg'></a></div>
-                        
-
-                        <div><a href ='#'><img src='img/bioPic.jpg'></a></div>
-                        <div><a href ='#'><img src='img/bioPic.jpg'></a></div>
-                        <div><a href ='#'><img src='img/bioPic.jpg'></a></div>
-                        <div><a href ='#'><img src='img/bioPic.jpg'></a></div>
+                    
+                        <div><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                        <div><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                        <div><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                        <div><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
                     </div>
+
+                    <div class ='largeRow'>
+                            <div class ='topContain'>
+                                <div class='mOne'><a href ='https://embeds.datpiff.com/mixtape/700457/'><img src='img/bioPic.jpg'></a></div>
+                                <div class='mTwo'><a href ='#'><img src='img/bioPic.jpg'></a></div>
+                            </div>
+                            
+                            <div class ='midContain'>
+                                <div class ='longRowOne'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                                <div class ='longRowTwo'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                                <div class ='longRowThree'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                                <div class ='longRowFour'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                            </div>
+
+                            <div class ='lowContain'>
+                                <div class ='longRowOne'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                                <div class ='longRowTwo'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                                <div class ='longRowThree'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                                <div class ='longRowFour'><a href ='#'><img class='gallySmall' src='img/bioPic.jpg'></a></div>
+                            </div>
+                        </div>
                 </section> <!-- end of music section-->
 
                 
-            <footer class='animated fadeIn galleryFoot '>
+            <footer class='animated fadeIn galleryFoot foot'>
                 <div class=copyRight>
-                    <h3> James Pressley Photography &copy; 2018</h3>
+                    <h3> LifeStat Music &copy; 2019</h3>
                 </div>
                 <div class ='socialFooter'>
                     <ul>
-                        <li><a href="#" class=""><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#" class=""><i class="fa fa-youtube"></i></a> </li>
-                        <li><a href="#" class=""><i class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="https://www.instagram.com/yolifestat/" target='_blank' class=""><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/staatback" target='_blank' class=""><i class="fa fa-youtube"></i></a> </li>
+                        <li><a href="https://soundcloud.com/lifestat" target='_blank' class=""><i class="fa fa-soundcloud"></i></a></li>
                     </ul>
                 </div> <!-- end of social -->
                       
                 <div class= 'footerNav'>
                     <ul>
                         <li><a href ='index.html'>Home</a></li>
-                        <li><a href ='Gallery.html'>Gallery</a></li>
-                        <li id = 'contact'><a href='contact_event.html'>Events/Contact</a></li>
+                        <li><a href ='galleryPage.html'>Gallery</a></li>
+                        <li id = 'contact'><a href='ECPage.html'>Events/Contact</a></li>
                     </ul>
                 </div> <!-- end of nav -->
             </footer> <!-- end of footer -->
   <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-  <script src ='mobile.js'></script>  
+  <script src ='index.js'></script>  
 </body>
 </html>

@@ -2,6 +2,7 @@ $('.menu').on('click', function(){
     $(this).toggleClass('active');
     $('.overlay').toggleClass('menuOpen');
     $('.galleryMusic').toggleClass('layer');
+    $('.firstRow').toggleClass('layer');
     $('.mediaBtn').toggleClass('layer');
     $('.musicBtn').toggleClass('layer');
     $('.galleryMedia').toggleClass('layer');

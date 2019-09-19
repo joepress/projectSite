@@ -338,7 +338,6 @@ footer{
     -webkit-box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.75);
     box-shadow: 0px -2px 11px 0px rgba(0,0,0,0.75);
-    z-index: ;
 }
 
 .ecFoot{
@@ -523,8 +522,8 @@ footer{
 	border-radius: 0 0 90px 90px;
 	position:relative;
     left:50%;
+    bottom:8rem;
     margin-left:-4.5rem;
-    bottom:1.9rem;
 	transition:0.1s;
 	-webkit-box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.75);
@@ -537,7 +536,7 @@ footer{
 	-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 	box-shadow: 5px 1px 4px 0px rgba(0,0,0,0.75);
-	bottom:2rem;
+	top:7.9rem;
 	z-index:0;
 }
 
@@ -807,7 +806,7 @@ footer{
 /*Gallery Page Music Portion Design*/
 
 .galleryFoot{
-    z-index: 0;
+    z-index: 3;
     animation-delay: 300ms;
 }
 
@@ -890,6 +889,7 @@ footer{
     box-shadow: -1px -5px 11px 6px rgba(77,77,77,0.52);
     animation-delay: 300ms;
     cursor:pointer;
+    z-index: 3;
 }
 
 .mediaBtn:active{
