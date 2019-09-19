@@ -3,7 +3,7 @@
 <head>
         <meta charset='UTF-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' type='text/css' href='styles/mobile.css'>
+        <link rel='stylesheet' type='text/css' href='styles/main.css'>
         <script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,21 +20,21 @@
                 <nav class='nav'>
                     <div class='overlay'>
                         <ul>
-                            <li><a href='mobile.html'>Home</a></li>
+                            <li><a href='index.html'>Home</a></li>
                             <li><a href='ECPage.html'>Events/Contact</a></li>
                             <li><a href='galleryPage.html'>Gallery</a></li>
                         </ul><!-- end of unordered list -->
                     </div> <!-- end of overlay -->
                 </nav> <!-- end of nav -->
                 
-                <div class='socialBar socialE'>
+                <div class='socialBar eventSocial'>
                     <ul>
-                        <li><a href="#" class="social one"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#" class="social two"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#" class=" social three"><i class="fa fa-soundcloud"></i></a></li>
-                        <li><a href="#" class="social four"><i class="fa fa-spotify"></i></a></li>
-                        <li><a href="#" class="social five"><i class="fa fa-twitter"></i></a></li>
-                        <li class='lastIcon'><a href="#" class="social six"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/yolifestat/" target='_blank' class="social one"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/staatback" target='_blank' class="social two"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://soundcloud.com/lifestat" target='_blank' class=" social three"><i class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="https://open.spotify.com/artist/3j8l4UmgeHV1f2z4YHnAXY?si=MK70TjDBSPKBuWZJaPPdDw" target='_blank' class="social four"><i class="fa fa-spotify"></i></a></li>
+                        <li><a href="https://twitter.com/statback" target='_blank' class="social five"><i class="fa fa-twitter"></i></a></li>
+                        <li class='lastIcon'><a href="https://www.facebook.com/eugenestatback.pressley" target='_blank' class="social six"><i class="fa fa-facebook"></i></a></li>
                     </ul>
                 </div><!-- end of socialBar-->
             </header><!-- end of header-->
@@ -108,7 +108,7 @@
                                 <li><a href='https://www.stubhub.com/jon-bellion-tickets-jon-bellion-wantagh-northwell-health-at-jones-beach-theater-8-10-2019/event/103931408/?sort=price+asc' target='_blank'>Buy</a></li>
                             </ul><!-- end of third recent date-->
                         
-                        </div><!-- end of events wrapper -->
+                        </div><!-- end of mobile dates -->
                         
                         <div class ='eventWrapper'>
                         
@@ -144,34 +144,35 @@
                 </section><!-- end of upcoming events -->
 
                 <section class ='letterSection animated fadeIn delay-2s'>
-                    <div class='newsLetterImg'>     
-                    </div>
-                    <div class ='letterClose' onclick="closeLetter()"><a href="javascript:void(0)">&times;</a></div>
-                    <div class ='newsLetter'>
+                        <div class='newsLetterImg'>     
+                        </div>
+                        <div class ='letterClose' onclick="closeLetter()"><a href="javascript:void(0)">&times;</a></div>
+                        <div class ='newsLetter'>
+                            
+                            <form action ='#' method ='post'>
+                                <div class ='newsTitle'><h2>News Letter</h2></div>
+                                <div class='newsIn'><input type ='text' class ='newsEmail' placeholder ='Register Email Here' required></div>
+                            <div class ='newsSubmit'><input class ='letterSubmit' type ='submit'></div>
+                            </form>
+                        </div> <!-- end of news letter -->
                         
-                        <form action ='#' method ='post'>
-                            <div class ='newsTitle'><h2>News Letter</h2></div>
-                            <div class='newsIn'><input type ='text' class ='newsEmail' placeholder ='Register Email Here' required></div>
-                           <div class ='newsSubmit'><input class ='letterSubmit' type ='submit'></div>
-                        </form>
-                    </div>
-                </section> <!-- end of news letter-->
+                </section> <!-- end of letter section-->
 
                 <footer class='animated fadeIn delay-1s ecFoot'>
                         <div class=copyRight>
                               <h3> LifeStat Music &copy; 2019</h3>
                             </div>
                               <div class ='socialFooter'>
-                                <ul>
-                                  <li><a href="#" class=""><i class="fa fa-instagram"></i></a></li>
-                                  <li><a href="#" class=""><i class="fa fa-youtube"></i></a> </li>
-                                  <li><a href="#" class=""><i class="fa fa-soundcloud"></i></a></li>
-                                </ul>
+                                 <ul>
+                                    <li><a href="https://www.instagram.com/yolifestat/" target='_blank' class=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/user/staatback" target='_blank' class=""><i class="fa fa-youtube"></i></a> </li>
+                                    <li><a href="https://soundcloud.com/lifestat" target='_blank' class=""><i class="fa fa-soundcloud"></i></a></li>
+                                 </ul>
                               </div> <!-- end of social -->
                       
                               <div class= 'footerNav'>
                                 <ul>
-                                  <li><a href ='mobile.html'>Home</a></li>
+                                  <li><a href ='index.html'>Home</a></li>
                                   <li><a href ='galleryPage.html'>Gallery</a></li>
                                   <li id = 'contact'><a href='ECPage.html'>Events/Contact</a></li>
                                 </ul>
@@ -180,6 +181,6 @@
                           </footer> <!-- end of footer -->
             </div>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-  <script src ='mobile.js'></script>  
+  <script src ='index.js'></script>  
 </body>
 </html>

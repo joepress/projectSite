@@ -1,0 +1,348 @@
+@media only screen and (min-width: 750px){
+  
+    /*shift social bar & footer social*/
+    .nav{
+        display:inline;
+    }
+
+    .socialBar ul {
+        flex-direction: column;
+    }
+
+    .socialBar ul li{
+        padding-bottom: .1rem;
+    }
+
+    .eventSocial{
+        top:0;
+    }
+
+    /* footer expand*/
+
+    footer{
+        grid-template-rows: none;
+        grid-template-columns: auto auto auto;
+    }
+
+    .copyRight,
+    .socialFooter,
+    .footerNav{
+        align-self:center;
+    }
+
+    .copyRight h3{
+        order: unset;
+    }
+
+    .socialFooter{
+        order: unset;
+    }
+
+    .socialFooter ul li{
+        padding: 0;
+    }
+
+    .footerNav{
+        display: unset;
+    }
+
+    .footerNav ul li a{
+        font-size: 2rem;
+        color: black;
+    }
+
+    .footerNav ul li{
+        display:inline;
+        width: 33%;
+    }
+
+    .footerNav ul li:nth-child(1){
+        padding-right: 1rem;
+    } 
+
+    .footerNav ul li:nth-child(3){
+        padding-left: 1rem;
+    }
+
+    /* Events Page*/
+    .letterSection{
+        bottom:4.55rem
+    }
+
+    .container{
+        margin: 0 auto;
+        width:85%;
+    }
+
+    header{
+        box-shadow: none;
+    }
+
+    .contactBtn{
+        bottom: 8.9rem;
+    }
+
+    .contactBtn:active{
+        bottom: 8.7rem;
+    }
+
+    /*music section*/
+
+    .projectOne,
+    .projectTwo,
+    .single{
+        max-width:58.7rem
+    }
+
+    /*gallery music*/
+
+    .mediaBtn{
+        bottom:4.8rem;
+    }
+
+    .mediaBtn:active{
+        bottom:4.7rem;
+    }
+
+    .musicBtn{
+        bottom:4.9rem;
+    }
+
+    .musicBtn:active{
+        bottom:4.8rem;
+    }
+
+    .mediaBtn,
+    .musicBtn{
+        ;
+    }
+
+    /* gallery media page*/
+    .mediaColumnOne div a img{
+        max-width:;
+    }
+
+    .mediaColumnOne div iframe{
+        max-width:;
+        height: 50rem;
+    }
+
+    .media{
+        margin-bottom: 8rem;
+    }
+
+    .galleryMedia{
+        margin-top: 3.4rem;
+    }
+    
+    .galleryTitle{
+        font-size: 3.5rem;
+    }
+
+    .gallySocial{
+       top:1rem; 
+    }
+
+    .gallySocial ul{
+        flex-direction: row;
+    }
+
+    .gallyHead{
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    }
+  }
+
+  @media only screen and (min-width: 1281px){
+    .thirdSong,
+    .fourthSong{
+        display:unset;
+    }
+
+    .projectOne,
+    .projectTwo{
+        max-width: 50rem;
+    }
+
+    .projectOne{
+        margin-right:.5rem;
+    }
+
+    .projectTwo{
+        margin-left:.5rem;
+    }
+
+    .musicProjects,
+    .singles{
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+
+    .single{
+        max-width: 30rem;
+        margin-right: 2rem;
+    }
+
+    .fourthSong{
+        margin-right: 0;
+    }
+
+    .titles{
+        font-size: 4rem;
+    }
+
+    /* upcoming events page*/
+
+    .upHeadline div,
+    .eventWrapper{
+        display: flex;
+     }
+
+     .mobileDates{
+         display: none;
+     }
+
+     .eventWrapper ul li,
+     .eventWrapper ul li a,
+     .upHeadline div span{
+        color:rgb(237, 240, 255);
+        font-weight: 600;
+        font-size:2.5rem;
+     }
+
+     .upHeadline div span:nth-child(4){
+         text-align: right;
+     }
+
+     .newsLetterImg{
+         background: url('../img/per1.jpeg');
+         background-size: cover;
+         background-position: center center;
+
+     }
+
+     /*gallery music*/
+
+     .galleryTitle{
+         font-size: 4rem;
+     }
+
+     .socialBar ul li {
+         padding-bottom: 2rem;
+     }
+
+     /*gallery media*/
+     .gallySocial ul li a{
+         font-size: 4rem;
+     }
+
+     .gallySocial{
+         top: 0;
+     }
+
+     .mediaColumnOne div iframe{
+         height: 80rem;
+     }
+
+     .galleryMedia{
+         padding:5rem;
+     }
+
+     .music{
+         position: relative;
+         bottom: 4rem;
+     }
+
+     /*footer*/
+     .copyRight h3,
+     .footerNav ul li a{
+         font-size: 2.8rem;
+     }
+
+     .socialFooter ul li a{
+         font-size: 3.3rem;
+     }
+
+  }
+
+  @media only screen and (min-width: 1050px){
+   .newsLetter form div{
+       margin-bottom: 4rem;
+   } 
+
+   .newsLetter form div:nth-child(3){
+       margin-bottom: 0;
+   }
+
+   .newsLetter h2{
+       font-size: 3rem;
+   }
+
+   .newsEmail{
+       height:3.8rem;
+       font-size:1.8rem;
+   }
+
+   .letterClose{
+       font-size: 4rem;
+   }
+
+   /* Gallery page*/
+   .firstRow{
+       display:none;
+   }
+
+   .largeRow{
+       display:unset;
+   }
+
+
+   .topContain,
+   .midContain,
+   .lowContain{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+   }
+
+   .midContain,
+   .lowContain{
+       margin-top: 5rem;
+   }
+
+   .lowContain{
+       margin-bottom:6rem;
+   }
+
+   .midContain div a img,
+   .lowContain div a img{
+       width: 100%;
+   }
+
+   .longRowOne{
+       margin-right: 1rem;
+   }
+
+   .longRowTwo{
+       .margin-right: .5rem;
+   }
+
+   .longRowThree{
+       margin-left: .5rem;
+   }
+
+   .longRowFour{
+       margin-left:1rem;
+   }
+
+   .galleryMusic{
+       width:81%;
+   }
+  }
+
+  @media only screen and (min-width: 600px){
+    .newsIn{
+        max-width:26rem;
+    }
+}

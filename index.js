@@ -1,137 +1,160 @@
- // menu to hide and come back
-  function openNav(){
-		if(screen.width <='375'){
-			document.getElementById("navSidePanel").style.height = '15%';
-			document.getElementById("menuBtn").style.height = '0';
-			document.getElementById("menuBtn").style.padding = '0 0';
-			document.getElementById("menuOffSet").style.display = 'none';
-			console.log(screen.width);
-			document.getElementById("social-bar").style.top = '21.9%';
-		}
-		else{
-			console.log(screen.width);
-		document.getElementById("navSidePanel").style.width = '13%';
-		document.getElementById("menuBtn").style.width = '0';
-		document.getElementById("menuBtn").style.padding = '0 0';
-		document.getElementById("menuOffSet").style.display = 'none';
-		
-		}
+$('.menu').on('click', function(){
+    $(this).toggleClass('active');
+    $('.overlay').toggleClass('menuOpen');
+    $('.galleryMusic').toggleClass('layer');
+    $('.mediaBtn').toggleClass('layer');
+    $('.musicBtn').toggleClass('layer');
+    $('.galleryMedia').toggleClass('layer');
+    $('.contactBtn').toggleClass('layer');
+    $('.letterSection').toggleClass('layer');
+    $('.upcomingEvents').toggleClass('layer');
+    $('.musicProjects a').toggleClass('layer');
+    $('.single').toggleClass('layer');
+    $('.iFrameContainer').toggleClass('layer');
+    $('.largeRow').toggleClass('layer');
+    $('.socialBar').toggleClass('layer');
+    $('.socialE').toggleClass('layer');
+    $('.titles').toggleClass('layer');
+    $('footer').toggleClass('layer');
+});
+
+
+
+function openContact(){
+	$('.conOverlay').css('height', '100%');
+    $('.openContact').css('visibility', 'hidden')
 }
 
-	function closeNav(){
-		if(screen.width <= '375'){
-			document.getElementById("menuBtn").style.height = '8.2%';
-			document.getElementById("menuOffSet").style.display = 'unset';
-			document.getElementById("navSidePanel").style.height ='0';
-			document.getElementById("social-bar").style.top = '12.3%';
-		}
-		else{
-			document.getElementById("menuBtn").style.width = '2.7%';
-			document.getElementById("menuBtn").style.padding = '10px 0px';
-			document.getElementById("menuOffSet").style.display = 'unset';
-			document.getElementById("navSidePanel").style.width ='0';
-		}
+function closeCon(){
+	$('.conOverlay').css('height', '0');
+	$('.openContact').css('visibility', 'visible')
 }
 
-  function conOpenNav(){
-		document.getElementById("conNavSidePanel").style.width = '25%';
-		document.getElementById("conMenuBtn").style.width = '0';
-		document.getElementById("conMenuBtn").style.padding = '0 0';
-		document.getElementById("conMenuOffSet").style.display = 'none';
+function openMedia(){
+    $('.galleryMedia').css('display', 'unset');
+    $('.galleryMusic').toggleClass('fadedOut');
+    $('.galleryMedia').toggleClass('fadedIn');
+    $('.galleryMedia').removeClass('fadedOut');
+    $('.galleryMusic').removeClass('fadedIn');
+    $('.mediaBtn').css('visibility', 'hidden');
+    $('.musicBtn').css('visibility', 'visible');
+    $('.socialBar').addClass('gallySocial');
+    $('header').addClass('gallyHead');
 }
 
-	function conCloseNav(){
-		document.getElementById("conMenuBtn").style.width = '3.2%';
-		document.getElementById("conMenuBtn").style.padding = '1.15% 0px';
-		document.getElementById("conMenuOffSet").style.display = 'unset';
-		document.getElementById("conNavSidePanel").style.width ='0';
+function closeMedia(){
+    $('.galleryMedia').css('display', 'none');
+    $('.galleryMedia').removeClass('fadedIn');
+    $('.galleryMedia').toggleClass('fadedOut');
+    $('.galleryMusic').removeClass('fadedOut');
+    $('.galleryMusic').toggleClass('fadedIn');
+    $('.musicBtn').css('visibility', 'hidden');
+    $('.mediaBtn').css('visibility', 'visible');
+    $('.socialBar').removeClass('gallySocial');
+    $('header').removeClass('gallyHead');
 }
 
-
-  function mobileOpenNav(){
-		
-		
+function fade(){
+    $('.galleryMusic').addClass('animated fadeIn')
 }
 
-	function conCloseNav(){
-		if($('.'))
-		document.getElementById("conMenuBtn").style.width = '3.2%';
-		document.getElementById("conMenuBtn").style.padding = '1.15% 0px';
-		document.getElementById("conMenuOffSet").style.display = 'unset';
-		document.getElementById("conNavSidePanel").style.width ='0';
+function closeLetter(){
+    $('.letterSection').addClass('fadingOut')
+    $('.mobileDates').css('margin-bottom', '10rem')
 }
 
-// nav bar hide on scroll down and appear on scroll up
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("menuBtn").classList.remove('animated', 'zoomOutUp' ,'delay-0.3s');
-    document.getElementById("social-bar").classList.remove('animated', 'zoomOutRight' ,'delay-0.5s');
-    document.getElementById("social-bar").classList.add('animated', 'zoomIn' ,'delay-0.3s');
-    document.getElementById("menuBtn").classList.add('animated', 'zoomIn' ,'delay-0.3s');
-  } else {
-    document.getElementById("menuBtn").classList.add('animated', 'zoomOutUp' ,'delay-0.3s');
-    document.getElementById("social-bar").classList.add('animated', 'zoomOutRight' ,'delay-0.5s');
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-
-/*var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("conMenuBtn").classList.remove('animated', 'zoomOutUp' ,'delay-0.3s');
-    document.getElementById("social-bar").classList.remove('animated', 'zoomOutRight' ,'delay-0.5s');
-    document.getElementById("social-bar").classList.add('animated', 'zoomIn' ,'delay-0.3s');
-    document.getElementById("conMenuBtn").classList.add('animated', 'zoomIn' ,'delay-0.3s');
-  } else {
-    document.getElementById("conMenuBtn").classList.add('animated', 'zoomOutUp' ,'delay-0.3s');
-    document.getElementById("social-bar").classList.add('animated', 'zoomOutRight' ,'delay-0.5s');
-  }
-  prevScrollpos = currentScrollPos;
-}*/
-
-// onscroll the videos appear
+// onscroll the images appear
 
 $(window).scroll(function(event) {
   
-  $(".iFrame").each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-			$('.videos h1').css('margin-left', '48%');
-			
-    } 
+    $(".music").each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        el.addClass("come-in");  
+      }
+    });
+    
   });
   
-});
+  var win =$(window);
+  var allImg =$('.music');
+  
+  // already visible videos
+  
+  allImg.each(function(i, el){
+      var el = $(el);
+      if(el.visible(true)){
+          el.addClass('already-visible');
+      }
+  });
+  
+  win.scroll(function(event){
+  
+      allVids.each(function(i, el){
+          var el =$(el);
+          if(el.visible(true)) {
+              el.addClass('come-in');
+          }
+      })
+  });
 
-var win =$(window);
-var allVids =$('.iFrame');
+  // onscroll the videos appear
 
-// already visible videos
+$(window).scroll(function(event) {
+  
+    $(".iFrameContainer").each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        el.addClass("come-in"); 
+             /* $('.videos h1').css('margin-left', '48%');*/
+              
+      } 
+    });
+    
+  });
+  
+  var win =$(window);
+  var allVids =$('.iFrameContainer');
+  
+  // already visible videos
+  
+  allVids.each(function(i, el){
+      var el = $(el);
+      if(el.visible(true)){
+          el.addClass('already-visible');
+      }
+  });
+  
+  win.scroll(function(event){
+  
+      allVids.each(function(i, el){
+          var el =$(el);
+          if(el.visible(true)) {
+              el.addClass('come-in');
+          }
+      })
+  })
 
-allVids.each(function(i, el){
-	var el = $(el);
-	if(el.visible(true)){
-		el.addClass('already-visible');
-	}
-});
 
-win.scroll(function(event){
+  /* function to resize iframes for responsiveness*/
 
-	allVids.each(function(i, el){
-		var el =$(el);
-		if(el.visible(true)) {
-			el.addClass('come-in');
-		}
-	})
-})
+  function resizeIFrameToFitContent( iFrame ) {
 
-$(function(){
+    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+}
+
+window.addEventListener('DOMContentLoaded', function(e) {
+
+    var iframes = document.querySelectorAll("iframe");
+    for( var i = 0; i < iframes.length; i++) {
+        resizeIFrameToFitContent( iframes[i] );
+    }
+} );
+
+
+
+/*$(function(){
 	$('.music').on('mouseenter', function(e){
 		if($(this).find('div').hasClass('significant')){
 			$('.significant').addClass('animated fadeInLeft delay-0.3s');
@@ -144,24 +167,24 @@ $(function(){
 			$(this).find('div').removeClass('fadeOutRight');
 			
 		}
-		else if($(this).find('div').hasClass('one')){
-			$('.one').addClass('animated fadeInLeft delay-0.3s');
-			$('.one').css('visibility', 'visible');
+		else if($(this).find('div').hasClass('slideOne')){
+			$('.slideOne').addClass('animated fadeInLeft delay-0.3s');
+			$('.slideOne').css('visibility', 'visible');
 			$(this).find('div').removeClass('fadeOutRight');
 		}
-		else if($(this).find('div').hasClass('two')){
-			$('.two').addClass('animated fadeInLeft delay-0.3s');
-			$('.two').css('visibility', 'visible');
+		else if($(this).find('div').hasClass('slideTwo')){
+			$('.slideTwo').addClass('animated fadeInLeft delay-0.3s');
+			$('.slideTwo').css('visibility', 'visible');
 			$(this).find('div').removeClass('fadeOutRight');
 		}
-		else if($(this).find('div').hasClass('three')){
-			$('.three').addClass('animated fadeInLeft delay-0.3s');
-			$('.three').css('visibility', 'visible');
+		else if($(this).find('div').hasClass('slideThree')){
+			$('.slideThree').addClass('animated fadeInLeft delay-0.3s');
+			$('.slideThree').css('visibility', 'visible');
 			$(this).find('div').removeClass('fadeOutRight');
 		}
-		else if($(this).find('div').hasClass('four')){
-			$('.four').addClass('animated fadeInLeft delay-0.3s');
-			$('.four').css('visibility', 'visible');
+		else if($(this).find('div').hasClass('slideFour')){
+			$('.slideFour').addClass('animated fadeInLeft delay-0.3s');
+			$('.slideFour').css('visibility', 'visible');
 			$(this).find('div').removeClass('fadeOutRight');
 		}
 		else{
@@ -173,17 +196,4 @@ $(function(){
 		$(this).find('div').addClass('animated fadeOutRight delay-0.3s');
 	})
 	
-});
-
-// js for the contact overlay
-
-function openContact(){
-	$('.conOverlay').css('height', '100%');
-	$('.openContact').css('visibility', 'hidden')
-}
-
-function closeCon(){
-	$('.conOverlay').css('height', '0');
-	$('.openContact').css('visibility', 'visible')
-}
-
+});*/
