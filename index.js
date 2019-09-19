@@ -15,6 +15,7 @@ $('.menu').on('click', function(){
     $('.socialBar').toggleClass('layer');
     $('.socialE').toggleClass('layer');
     $('.titles').toggleClass('layer');
+    $('.galleryTitle').toggleClass('layer');
     $('footer').toggleClass('layer');
 });
 
