@@ -816,6 +816,7 @@ footer{
 
 .galleryTitle{
     text-align: center;
+    position: relative;
     font-size: 3rem;
     text-shadow: 1px 1px 2.5px #000000;
     cursor: default;
