@@ -287,10 +287,6 @@ header{
     z-index: 0;
   }
 
-  .iFrameContainer:nth-child(4){
-      margin-bottom: 20rem;
-  }
-  
   .come-in{
     transform: translateY(450px);
     animation: come-in 1.3s ease forwards;
@@ -838,6 +834,7 @@ footer{
     z-index: ;
     top: 7vh;
     margin: 0 auto;
+    margin-bottom: 15rem;
 }
 
 .firstRow{
@@ -931,7 +928,6 @@ footer{
     position: absolute;
     overflow-x:hidden;
     margin-top: .4rem;
-    margin-bottom: 18rem;
     display:none;
 }
 .tLeft{
@@ -1040,4 +1036,9 @@ footer{
 
 .layer{
     z-index:-1;
+}
+
+.space{
+    width:100%;
+    height:20rem;
 }
