@@ -79,11 +79,11 @@
     }
 
     .contactBtn{
-        bottom: 8.9rem;
+        bottom: 15rem;
     }
 
     .contactBtn:active{
-        bottom: 8.7rem;
+        bottom: 15.1rem;
     }
 
     /*music section*/
@@ -343,6 +343,12 @@
 
    .galleryMusic{
        width:81%;
+   }
+
+   /*header*/
+
+   header{
+       background-attachment: fixed;
    }
   }
 
