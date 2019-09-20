@@ -17,6 +17,8 @@ $('.menu').on('click', function(){
     $('.socialE').toggleClass('layer');
     $('.titles').toggleClass('layer');
     $('.galleryTitle').toggleClass('layer');
+    $('.midContain').toggleClass('layer');
+    $('.lowContain').toggleClass('layer');
     $('footer').toggleClass('layer');
 });
 

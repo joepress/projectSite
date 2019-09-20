@@ -58,9 +58,10 @@ html{
 header{
     width:100%;
     height:100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,.9), transparent),
-                                url('../img/per1.jpeg') no-repeat;
+    background: linear-gradient(to bottom, rgba(0,0,0,.9), transparent);
 
+    background-repeat: no-repeat;
+    background: url('../img/per1.jpeg');
     background-attachment: fixed;
     background-position: center center;
     background-size:183%;
