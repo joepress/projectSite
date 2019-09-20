@@ -834,7 +834,6 @@ footer{
     z-index: ;
     top: 7vh;
     margin: 0 auto;
-    margin-bottom: 15rem;
 }
 
 .firstRow{
@@ -1040,5 +1039,5 @@ footer{
 
 .space{
     width:100%;
-    height:20rem;
+    height:10rem;
 }
