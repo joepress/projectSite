@@ -4,7 +4,8 @@
 	<meta charset='UTF-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='stylesheet' type='text/css' href='styles/main.css'>
-	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,20 +46,20 @@
 			<div class='musicContainer'>
 
 				<div class='titles'>
-					<h1 class ='music'>Music</h1>
+					<h1 class ='music' data-aos="fade-right" data-aos-delay="500">Music</h1>
 				</div>
 				<div class='musicLinks'>
 				
 					<div class ='musicProjects'>
-						<a class='projectOne music'  href='https://embeds.datpiff.com/mixtape/700457/'  target='_blank'><div class='significant'>Significant</div></a>
-						<a class='projectTwo music'  href='https://music.apple.com/us/album/just-add-water/1445649983?app=music&ign-mpt=uo%3D10'  target='_blank'><div class='jaw'>jaw</div></a>
+						<a class='projectOne music' data-aos='flip-up'  href='https://embeds.datpiff.com/mixtape/700457/'  target='_blank'><div class='significant'>Significant</div></a>
+						<a class='projectTwo music' data-aos='flip-up'  href='https://music.apple.com/us/album/just-add-water/1445649983?app=music&ign-mpt=uo%3D10'  target='_blank'><div class='jaw'>jaw</div></a>
 					</div><!-- end of music projects -->
 					
 					<div class ='singles'>
-						<a class= 'single music firstSong ' href='https://open.spotify.com/embed/album/7w6SSWYq9jr3jdZxR1AH6K'  target='_blank'><div class='slideOne'>one</div></a>
-						<a class='single music secondSong' href='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/544390878&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'  target='_blank'><div class='slideTwo'>two</div></a>
-						<a class= 'single thirdSong music' href='https://open.spotify.com/embed/album/7w6SSWYq9jr3jdZxR1AH6K'  target='_blank'><div class='slideThree'>three</div></a>
-						<a class= 'single fourthSong music' href='https://open.spotify.com/embed/album/7w6SSWYq9jr3jdZxR1AH6K'  target='_blank'><div class='slideFour'>four</div></a>
+						<a class= 'single music firstSong ' data-aos='flip-up' href='https://open.spotify.com/embed/album/7w6SSWYq9jr3jdZxR1AH6K'  target='_blank'><div class='slideOne'>one</div></a>
+						<a class='single music secondSong' data-aos='flip-up' href='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/544390878&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'  target='_blank'><div class='slideTwo'>two</div></a>
+						<a class= 'single thirdSong music' data-aos='flip-up' href='https://open.spotify.com/embed/album/7w6SSWYq9jr3jdZxR1AH6K'  target='_blank'><div class='slideThree'>three</div></a>
+						<a class= 'single fourthSong music' data-aos='flip-up' href='https://open.spotify.com/embed/album/7w6SSWYq9jr3jdZxR1AH6K'  target='_blank'><div class='slideFour'>four</div></a>
 					</div><!-- end of singles -->
 					
 				</div> <!-- end of musicLinks -->
@@ -67,15 +68,15 @@
 		</section><!-- end of music section -->
 
 		<section class='videos'>
-				<div class='titles'><h1 class ='music'>Videos</h1></div>
+				<div class='titles'><h1 class ='music' data-aos="fade-right" data-aos-delay="500">Videos</h1></div>
 				<div class='iFrameContainer'>
-					<iframe  src="https://www.youtube.com/embed/NZEjuhFGE6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe  data-aos='zoom-out' data-aos-delay="500"  src="https://www.youtube.com/embed/NZEjuhFGE6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div class='iFrameContainer'>
-					<iframe  src="https://www.youtube.com/embed/ijAuctMKjlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe data-aos='zoom-out' data-aos-delay="500" src="https://www.youtube.com/embed/ijAuctMKjlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
-				<div class='iFrameContainer' style='margin-bottom: 10rem;'>
-					<iframe src="https://www.youtube.com/embed/wq8fg98K4xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class='iFrameContainer' style='margin-bottom: 15rem;'>
+					<iframe data-aos='zoom-out' data-aos-delay="500" src="https://www.youtube.com/embed/wq8fg98K4xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 		</section>
 
@@ -103,7 +104,10 @@
 			  
 			<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
             <script src ='index.js'></script>
-            <script src ='http://opensource.teamdf.com/visible/jquery.visible.js'></script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
 	</body> <!--end of body -->
 
 </html>

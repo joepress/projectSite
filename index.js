@@ -67,7 +67,7 @@ function closeLetter(){
 
 // onscroll the images appear
 
-$(window).scroll(function(event) {
+/*$(window).scroll(function(event) {
   
     $(".music").each(function(i, el) {
       var el = $(el);
@@ -108,7 +108,7 @@ $(window).scroll(function(event) {
       var el = $(el);
       if (el.visible(true)) {
         el.addClass("come-in"); 
-             /* $('.videos h1').css('margin-left', '48%');*/
+             /* $('.videos h1').css('margin-left', '48%');
               
       } 
     });
@@ -135,7 +135,7 @@ $(window).scroll(function(event) {
               el.addClass('come-in');
           }
       })
-  })
+  })*/
 
 
   /* function to resize iframes for responsiveness*/
