@@ -59,13 +59,26 @@ function closeMedia(){
 }
 
 function fade(){
-    $('.galleryMusic').addClass('animated fadeIn')
+    $('.galleryMusic').addClass('animated fadeIn');
 }
 
 function closeLetter(){
-    $('.letterSection').addClass('fadingOut')
-    $('.mobileDates').css('margin-bottom', '10rem')
+    $('.letterSection').addClass('fadingOut');
+    $('.mobileDates').css('margin-bottom', '10rem');
 }
+
+
+$(document).ready(function () {
+    alert("hi");
+ });
+/*scroll down on load*/
+
+
+/*$(function(){
+    $('html, body').animate({
+        scrollTop: $('scrollHere').offset().top
+    }, 3000);
+});*/
 
 // onscroll the images appear
 

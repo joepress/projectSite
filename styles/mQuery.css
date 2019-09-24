@@ -112,11 +112,6 @@
         bottom:4.3rem;
     }
 
-    .mediaBtn,
-    .musicBtn{
-        ;
-    }
-
     /* gallery media page*/
     .mediaColumnOne div a img{
         max-width:;
@@ -250,8 +245,7 @@
      }
 
      .music{
-         position: relative;
-         bottom: 4rem;
+         margin-bottom: 4rem;
      }
 
      /*footer*/
@@ -271,12 +265,12 @@
 
      /*contact overlay*/
 
-     .overlayConent,
+     .overlayContent,
      .conOverlay h1{
          top:9%;
      }
 
-     .overlayConent div{
+     .overlayContent div{
          margin-bottom: 4rem;
      }
 
