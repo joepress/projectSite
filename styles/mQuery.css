@@ -79,11 +79,11 @@
     }
 
     .contactBtn{
-        bottom: 15rem;
+        bottom: 9rem;
     }
 
     .contactBtn:active{
-        bottom: 15.1rem;
+        bottom: 9.1rem;
     }
 
     /*music section*/
