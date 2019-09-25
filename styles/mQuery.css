@@ -337,6 +337,10 @@
        display:none;
    }
 
+   .secondRow{
+       display: none;
+   }
+
    .largeRow{
        display:unset;
    }
