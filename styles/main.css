@@ -206,6 +206,7 @@ header{
         .musicContainer{
             width:75%;
             margin:0 auto;
+            overflow-x: hidden;
         }
 
         .projectOne,
@@ -223,14 +224,6 @@ header{
             z-index:;
             position: relative;
         }
-        .projectOne:hover,
-        .projectTwo:hover,
-        .singles div:hover
-        {
-            /*background: linear-gradient(to bottom, rgba(0,0,0,.9), transparent),
-                        url('../img/bioPic.jpg') 50% 50% no-repeat;
-            background-size: cover; */
-        } 
 
         .musicProjects,
         .singles {
@@ -256,20 +249,6 @@ header{
             margin-bottom:3rem;
         }
 
-        .thirdSong{
-            display:none;
-        }
-
-        .fourthSong{
-            display:none;
-        }
-
-        .significant{
-            position: relative;
-            top:9.5rem;
-            visibility: hidden;
-        }
-
         .significant,
         .jaw,
         .slideOne,
@@ -288,10 +267,6 @@ header{
     z-index: 0;
   }
 
-
-.videos{ /* causing flip up animation on mobile to behave oddly... try working with music position */
-
-}
   .come-in{
     transform: translateY(450px);
     animation: come-in 1.3s ease forwards;
@@ -862,6 +837,18 @@ footer{
     grid-column-gap: 1rem;
 }
 
+.secondRow{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:4rem;
+    overflow: hidden;
+}
+
+.sOne,
+.sTwo{
+    width:35%;
+}
 .mOne{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -872,7 +859,9 @@ footer{
     grid-column-end: 5;
 }
 
-.firstRow img{ 
+.firstRow img,
+.secondRow .sOne a img,
+.secondRow .sTwo a img{ 
     width: 100%;
     -webkit-box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.37);
     -moz-box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.37);
@@ -1056,5 +1045,5 @@ footer{
 
 .space{
     width:100%;
-    height:10rem;
+    height:15rem;
 }

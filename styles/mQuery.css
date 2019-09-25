@@ -248,6 +248,37 @@
          margin-bottom: 4rem;
      }
 
+     .mediaHead{
+         -webkit-box-shadow: none;
+         box-shadow: none;
+     }
+
+     .hover:hover{
+        background: linear-gradient(to bottom, rgba(0,0,0,.9), transparent),
+                    url('../img/bioPic.jpg') 50% 50% no-repeat;
+        background-size: cover; 
+    } 
+
+    .significant,
+     .jaw,
+    .slideOne,
+    .slideTwo,
+    .slideThree,
+    .slideFour{
+        position: relative;
+        top:15.5rem;
+        font-size: 2rem;
+        color: rgb(222, 233, 252);
+        text-transform: capitalize;
+    }
+
+    .slideOne,
+    .slideTwo,
+    .slideThree,
+    .slideFour{
+        text-align: center;
+    }
+
      /*footer*/
      .copyRight h3,
      .footerNav ul li a{

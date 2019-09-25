@@ -1,3 +1,4 @@
+/*click menu and bring everything below it if need be*/
 $('.menu').on('click', function(){
     $(this).toggleClass('active');
     $('.overlay').toggleClass('menuOpen');
@@ -22,6 +23,8 @@ $('.menu').on('click', function(){
     $('footer').toggleClass('layer');
 });
 
+/* open and close function for contact overlay*/
+
 function openContact(){
 	$('.conOverlay').css('height', '100%');
     $('.openContact').css('visibility', 'hidden')
@@ -31,6 +34,8 @@ function closeCon(){
 	$('.conOverlay').css('height', '0');
 	$('.openContact').css('visibility', 'visible')
 }
+
+/* open media and open music */
 
 function openMedia(){
     $('.galleryMedia').css('display', 'unset');
@@ -60,6 +65,7 @@ function fade(){
     $('.galleryMusic').addClass('animated fadeIn')
 }
 
+/* close news letter button*/
 function closeLetter(){
     $('.letterSection').addClass('fadingOut')
     $('.mobileDates').css('margin-bottom', '10rem')
@@ -75,78 +81,6 @@ function scrollDown(){
 }
 
 window.onload = scrollDown;
-
-// onscroll the images appear
-
-/*$(window).scroll(function(event) {
-  
-    $(".music").each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        el.addClass("come-in");  
-      }
-    });
-    
-  });
-  
-  var win =$(window);
-  var allImg =$('.music');
-  
-  // already visible videos
-  
-  allImg.each(function(i, el){
-      var el = $(el);
-      if(el.visible(true)){
-          el.addClass('already-visible');
-      }
-  });
-  
-  win.scroll(function(event){
-  
-      allVids.each(function(i, el){
-          var el =$(el);
-          if(el.visible(true)) {
-              el.addClass('come-in');
-          }
-      })
-  });
-
-  // onscroll the videos appear
-
-$(window).scroll(function(event) {
-  
-    $(".iFrameContainer").each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        el.addClass("come-in"); 
-             /* $('.videos h1').css('margin-left', '48%');
-              
-      } 
-    });
-    
-  });
-  
-  var win =$(window);
-  var allVids =$('.iFrameContainer');
-  
-  // already visible videos
-  
-  allVids.each(function(i, el){
-      var el = $(el);
-      if(el.visible(true)){
-          el.addClass('already-visible');
-      }
-  });
-  
-  win.scroll(function(event){
-  
-      allVids.each(function(i, el){
-          var el =$(el);
-          if(el.visible(true)) {
-              el.addClass('come-in');
-          }
-      })
-  })*/
 
 
   /* function to resize iframes for responsiveness*/
@@ -165,10 +99,10 @@ window.addEventListener('DOMContentLoaded', function(e) {
     }
 } );
 
+/*hover effects for music section on home page*/
 
-
-/*$(function(){
-	$('.music').on('mouseenter', function(e){
+$(function(){
+	$('.hover').on('mouseenter', function(e){
 		if($(this).find('div').hasClass('significant')){
 			$('.significant').addClass('animated fadeInLeft delay-0.3s');
 			$('.significant').css('visibility', 'visible');
@@ -209,4 +143,4 @@ window.addEventListener('DOMContentLoaded', function(e) {
 		$(this).find('div').addClass('animated fadeOutRight delay-0.3s');
 	})
 	
-});*/
+});
