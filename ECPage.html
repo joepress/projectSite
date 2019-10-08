@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <meta charset='UTF-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' type='text/css' href='styles/main.css'>
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel='stylesheet' href='styles/mQuery.css' type='text/css'>
-        
-        <title>Events || Contact</title>
-    </head> <!-- end of head -->
+        <head>
+            <meta charset='UTF-8'>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <!-- main css styles -->
+            <link rel='stylesheet' type='text/css' href='styles/main.css'>
+                        <!-- fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/f03ca51a69.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <!-- animation -->
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+                        <!-- responsive styles -->
+            <link rel='stylesheet' type='text/css' href='styles/mQuery.css'>
+                
+            <title>Events || Contact</title>
+        </head> <!-- end of head -->
     
         <body>
             <header class='animated fadeIn eventHead '>
@@ -45,10 +49,10 @@
             <section id='statCon' class='conOverlay'>
                     <div><a href="javascript:void(0)" class="closeCon" onclick="closeCon()"><i class="fas fae fa-angle-double-up"></i></a></div>
                         <h1>Contact</h1>
-                        <form method='post' action='conSubmit.php' class='overlayContent' target ='blank'>
-                           <div class ='conNa'><input id ='name' class='overlayName' type= 'text' placeholder='First & Last name here' required><br></div>
-                            <div class ='conEm'><input id ='email' class='overlayEmail' type= 'text' placeholder='Email' required><br></div>
-                            <div class ='conMe'><textarea rows='10' cols='50' id ='message' class='overlayMessage' placeholder='message aqui' required></textarea><br></div>
+                        <form method='post' action='/send_mail.php' class='overlayContent' target ='blank'>
+                           <div class ='conNa'><input id ='name' class='overlayName' name ='first_name' type= 'text' placeholder='First & Last name here' required ><br></div>
+                            <div class ='conEm'><input id ='email' class='overlayEmail' name ='email_address' type= 'text' placeholder='Email' required ><br></div>
+                            <div class ='conMe'><textarea name='comments' rows='10' cols='50' id ='message' class='overlayMessage' placeholder='message aqui' required ></textarea><br></div>
                             <input type='submit' class='conSubmit'>
                         </form>		
             </section><!-- end of contact overlay -->

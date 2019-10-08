@@ -46,6 +46,7 @@ function openMedia(){
     $('.mediaBtn').css('visibility', 'hidden');
     $('.musicBtn').css('visibility', 'visible');
     $('.socialBar').addClass('gallySocial');
+    $('header').addClass('mediaHead');
     $('header').addClass('gallyHead');
 }
 
@@ -58,6 +59,7 @@ function closeMedia(){
     $('.musicBtn').css('visibility', 'hidden');
     $('.mediaBtn').css('visibility', 'visible');
     $('.socialBar').removeClass('gallySocial');
+    $('header').removeClass('mediaHead');
     $('header').removeClass('gallyHead');
 }
 
